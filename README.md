@@ -2,6 +2,11 @@
 
 This repo is a Redis Search demo built around S&P 500 FY2025 10-K filings. It shows how Redis can support structured filtering, autocomplete, full-text search, vector search, and hybrid search over the same application data.
 
+Dataset:
+
+- [sample-records.json.zip](https://storage.googleapis.com/redis-developer-public-datasets/redis-search-10k-dataset/sample-records.json.zip)
+- Extract `sample-records.json` to `src/main/resources/datasets/sp500-fy2025-10k/sample-records.json`
+
 ## Prerequisites
 
 - Java 25
@@ -61,8 +66,16 @@ Use RedisInsight if you want to inspect the underlying Redis data, but the demo 
 The first startup may take longer because the app indexes the packaged dataset into Redis and generates embeddings for vector search.
 
 - The packaged dataset in `src/main/resources/datasets` is large, roughly `274 MB`.
+- The sample records dataset used by this demo is also published here: [sample-records.json.zip](https://storage.googleapis.com/redis-developer-public-datasets/redis-search-10k-dataset/sample-records.json.zip)
+- After downloading, extract it to `src/main/resources/datasets/sp500-fy2025-10k/sample-records.json`
 - First-run indexing time depends on how many companies you load and whether the local transformer embedder is configured and ready.
 - If vector or hybrid search fail, check your local embedding setup first.
+
+Example:
+
+```bash
+unzip sample-records.json.zip -d src/main/resources/datasets/sp500-fy2025-10k
+```
 
 If the dataset is not loaded yet, initialize it with:
 
