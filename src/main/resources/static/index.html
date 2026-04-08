@@ -3,72 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Search and Autocomplete</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Redis S&amp;P 500 10-K Retrieval Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css?v=20260407-first-run-indexing">
 </head>
 <body>
-    <div class="wrapper">
-        <h1>Movie Search and Autocomplete</h1>
+    <header class="app-toolbar">
+        <div class="app-toolbar__inner">
+            <div class="toolbar-brand">
+                <img src="/images/redis-logo.png" alt="Redis logo">
+                <span class="toolbar-divider" aria-hidden="true"></span>
+                <h1>10-K Retrieval</h1>
+            </div>
+        </div>
+    </header>
 
-        <div class="search-container">
-            <form id="search-form">
-                <div class="search-bars-container">
-                    <div class="search-input-container">
-                        <label for="search-input">Movie Title:</label>
-                        <input type="text" id="search-input" placeholder="Search by movie title..." autocomplete="off">
-                        <div id="autocomplete-results" class="autocomplete-results"></div>
+    <main class="console-shell">
+        <section id="dataset-setup-modal" class="dataset-setup-modal hidden" aria-live="polite">
+            <div class="dataset-setup-card">
+                <span class="results-kicker">First Run</span>
+                <h2>Choose How Many Companies To Index</h2>
+                <p class="dataset-setup-copy">
+                    The packaged dataset already includes all companies in `sample-records.json`. Choose how many to load into Redis for this run.
+                </p>
+                <form id="dataset-setup-form" class="dataset-setup-form">
+                    <label for="company-count-range">Companies to index</label>
+                    <input
+                        id="company-count-range"
+                        name="companyCount"
+                        type="range"
+                        min="10"
+                        max="500"
+                        step="1"
+                        value="100"
+                    >
+                    <div class="dataset-setup-value-row">
+                        <strong id="company-count-value">100 companies</strong>
+                        <span id="dataset-setup-hint" class="dataset-setup-hint">First startup will embed and index the selected subset.</span>
+                    </div>
+                    <div class="dataset-setup-actions">
+                        <button type="submit" id="initialize-dataset-button" class="primary-button">Initialize Dataset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="control-dock">
+            <div class="panel controls-panel">
+                <form id="search-form" class="search-form">
+                    <div class="form-row form-row-query">
+                        <div class="field-group field-group-query">
+                            <label for="query-input">Free-Text Query</label>
+                            <textarea
+                                id="query-input"
+                                name="query"
+                                rows="2"
+                                placeholder="cloud demand, AI infrastructure, pricing pressure, supply chain exposure"
+                            ></textarea>
+                        </div>
                     </div>
 
-                    <div class="search-input-container">
-                        <label for="extract-search-input">Movie Extract:</label>
-                        <input type="text" id="extract-search-input" placeholder="Search through movie extracts...">
-                    </div>
-                </div>
+                    <div class="form-grid form-grid-filters">
+                        <div class="field-group autocomplete-field">
+                            <label for="company-input">Company Name</label>
+                            <input id="company-input" name="companyName" type="text" autocomplete="off" placeholder="Apple">
+                            <div id="company-autocomplete" class="autocomplete-results hidden"></div>
+                        </div>
 
-                <div class="filters-container">
-                    <div class="filter-group">
-                        <label for="year-filter">Year:</label>
-                        <input type="number" id="year-filter" placeholder="Filter by year">
-                    </div>
+                        <div class="field-group autocomplete-field">
+                            <label for="ticker-input">Ticker</label>
+                            <input id="ticker-input" name="ticker" type="text" autocomplete="off" placeholder="AAPL">
+                            <div id="ticker-autocomplete" class="autocomplete-results hidden"></div>
+                        </div>
 
-                    <div class="filter-group">
-                        <label for="cast-filter">Cast:</label>
-                        <input type="text" id="cast-filter" placeholder="Filter by actor">
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="genre-filter">Genre:</label>
-                        <div class="genre-dropdown-container">
-                            <select id="genre-filter" multiple class="genre-select">
-                                <!-- Options will be populated dynamically -->
+                        <div class="field-group">
+                            <label for="filing-year">Filing Year</label>
+                            <select id="filing-year" name="filingYear">
+                                <option value="FY2025" selected>FY2025</option>
                             </select>
-                            <div id="genre-search-container">
-                                <div class="genre-search-wrapper">
-                                    <input type="text" id="genre-search" placeholder="Search genres...">
-                                    <button type="button" id="genre-toggle-btn" class="genre-toggle-btn">▼</button>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="filing-date">Filing Date</label>
+                            <input id="filing-date" name="filingDate" type="date">
+                        </div>
+
+                        <div class="field-group multi-select-field">
+                            <label>Sectors</label>
+                            <div class="multi-select" data-filter="sector">
+                                <button type="button" class="multi-select-trigger" data-target="sector-options">
+                                    <span class="trigger-text">All sectors</span>
+                                    <span class="trigger-arrow">▾</span>
+                                </button>
+                                <div class="multi-select-panel hidden" id="sector-options">
+                                    <input type="text" class="multi-select-search" placeholder="Filter sectors..." data-filter-search="sector">
+                                    <div class="option-list" id="sector-list"></div>
                                 </div>
-                                <div id="genre-dropdown" class="genre-dropdown"></div>
+                                <div class="selected-pills" id="sector-pills"></div>
+                            </div>
+                        </div>
+
+                        <div class="field-group multi-select-field">
+                            <label>Sections</label>
+                            <div class="multi-select" data-filter="section">
+                                <button type="button" class="multi-select-trigger" data-target="section-options">
+                                    <span class="trigger-text">All sections</span>
+                                    <span class="trigger-arrow">▾</span>
+                                </button>
+                                <div class="multi-select-panel hidden" id="section-options">
+                                    <input type="text" class="multi-select-search" placeholder="Filter sections..." data-filter-search="section">
+                                    <div class="option-list" id="section-list"></div>
+                                </div>
+                                <div class="selected-pills" id="section-pills"></div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="form-row form-row-modes">
+                        <div class="mode-toggle" role="radiogroup" aria-label="Search mode">
+                            <button type="button" class="mode-chip" data-mode="full-text">Full-Text</button>
+                            <button type="button" class="mode-chip" data-mode="vector">Vector</button>
+                            <button type="button" class="mode-chip active" data-mode="hybrid">Hybrid</button>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="primary-button">Run Retrieval</button>
+                            <button type="button" id="reset-button" class="secondary-button">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="search-feedback">
+            <div id="coverage-status" class="coverage-status">Loading corpus...</div>
+            <div id="search-status" class="search-status hidden" aria-live="polite"></div>
+        </div>
+
+        <section class="panel results-panel">
+            <div class="results-header">
+                <div>
+                    <span class="results-kicker">Results</span>
+                    <h2 id="results-heading">Chunk-Level Matches</h2>
                 </div>
+                <p id="results-subtitle" class="results-subtitle">
+                    Run retrieval to inspect ranked FY2025 filing chunks.
+                </p>
+            </div>
 
-                <button type="submit" id="search-button">Search</button>
-            </form>
-        </div>
+            <div id="single-results-view" class="single-results-view">
+                <div id="single-results" class="results-list"></div>
+            </div>
+        </section>
+    </main>
 
-        <div class="results-container">
-            <h2>Search Results</h2>
-            <div id="results-count"></div>
-            <div id="search-results" class="search-results"></div>
-        </div>
-    </div>
-
-    <footer>
-        <p>Powered by <img src="/images/redis-logo.png" alt="Redis Logo"></p>
-    </footer>
-
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js?v=20260407-initialization-timing"></script>
 </body>
 </html>

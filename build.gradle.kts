@@ -10,6 +10,7 @@ description = "redis-search-demo"
 
 java {
     toolchain {
+        // Intentional for this demo. Documented in README so setup is explicit for presenters.
         languageVersion = JavaLanguageVersion.of(25)
     }
 }
@@ -31,6 +32,7 @@ dependencies {
     implementation("redis.clients:jedis:7.4.0")
 
     implementation("com.redis.om:redis-om-spring:2.0.4")
+    implementation("com.redis.om:redis-om-spring-ai:2.0.4")
     annotationProcessor("com.redis.om:redis-om-spring:2.0.4")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")

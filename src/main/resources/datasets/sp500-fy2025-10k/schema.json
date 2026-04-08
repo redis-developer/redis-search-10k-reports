@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sp500-fy2025-10k.schema.json",
+  "title": "SP500 FY2025 10-K Chunk Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "companyName",
+    "ticker",
+    "sector",
+    "sectionName",
+    "filingYear",
+    "filingDate",
+    "secUrl",
+    "chunkText"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "ticker": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "string"
+    },
+    "sectionName": {
+      "type": "string"
+    },
+    "filingYear": {
+      "type": "integer"
+    },
+    "filingDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "secUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "chunkText": {
+      "type": "string"
+    },
+    "companyId": {
+      "type": "string"
+    },
+    "companyCik": {
+      "type": "string"
+    },
+    "filingType": {
+      "type": "string"
+    },
+    "accessionNumber": {
+      "type": "string"
+    },
+    "chunkIndex": {
+      "type": "integer"
+    },
+    "chunkCount": {
+      "type": "integer"
+    },
+    "chunkStartChar": {
+      "type": "integer"
+    },
+    "chunkEndChar": {
+      "type": "integer"
+    },
+    "sectionOrder": {
+      "type": "integer"
+    },
+    "sourceTitle": {
+      "type": "string"
+    },
+    "sourceYear": {
+      "type": "integer"
+    },
+    "sourceSection": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "embeddingModel": {
+      "type": "string"
+    },
+    "contentHash": {
+      "type": "string"
+    }
+  }
+}

@@ -1,7 +1,15 @@
 services:
   redis:
-    image: redis/redis-stack-server:latest
+    image: redis/redis-stack-server:7.4.0-v8
     container_name: redis-search-demo-redis
+    command:
+      - redis-stack-server
+      - --save
+      - ""
+      - --appendonly
+      - "no"
+      - --stop-writes-on-bgsave-error
+      - "no"
     ports:
       - "6379:6379"
     volumes:
@@ -13,7 +21,7 @@ services:
       retries: 5
 
   redisinsight:
-    image: redis/redisinsight:latest
+    image: redis/redisinsight:2.70
     container_name: redis-search-demo-redisinsight
     depends_on:
       redis:

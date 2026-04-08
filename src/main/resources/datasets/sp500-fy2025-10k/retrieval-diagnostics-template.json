@@ -1,0 +1,26 @@
+{
+  "query": null,
+  "mode": null,
+  "latencyMs": 0,
+  "resultCount": 0,
+  "indexedCompanyCount": 0,
+  "indexedChunkCount": 0,
+  "compareModes": {
+    "fullText": {
+      "latencyMs": 0,
+      "resultCount": 0
+    },
+    "vector": {
+      "latencyMs": 0,
+      "resultCount": 0
+    },
+    "hybrid": {
+      "latencyMs": 0,
+      "resultCount": 0
+    }
+  },
+  "notes": [
+    "Synthetic template only.",
+    "Populate this shape from the search API so the dashboard can render latency and mode comparisons."
+  ]
+}

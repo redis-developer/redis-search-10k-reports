@@ -1,0 +1,18 @@
+{
+  "targetUniverse": "S&P 500 FY2025-era constituents",
+  "targetCompanies": 500,
+  "indexedCompanies": 500,
+  "skippedCompanies": 0,
+  "indexedSections": 4,
+  "indexedChunks": 108422,
+  "estimatedCompressedBytes": 43204741,
+  "estimatedUncompressedBytes": 287322635,
+  "generatedAt": "2026-04-07T13:02:20+00:00",
+  "notes": [
+    "Built from SEC submissions JSON and filing HTML.",
+    "Raw SEC artifacts are cached locally and reused by default; pass --refresh to re-download.",
+    "Wikipedia constituents list was used unless a local snapshot was provided.",
+    "Resolved constituents were frozen to constituents-snapshot.json.",
+    "Provide --constituents-snapshot for a stricter FY2025-era constituent universe."
+  ]
+}

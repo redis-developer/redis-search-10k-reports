@@ -48,6 +48,32 @@ out/
 .env.*
 !.env.example
 .direnv/
+.cache/
+
+# Python / dataset tooling
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.hypothesis/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+htmlcov/
+.coverage
+.coverage.*
+*.egg-info/
+pip-wheel-metadata/
+.ipynb_checkpoints/
+
+# Local data workspaces
+local-data/
 
 # Logs
 *.log

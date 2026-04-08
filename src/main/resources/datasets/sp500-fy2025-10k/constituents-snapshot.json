@@ -1,0 +1,3998 @@
+[
+  {
+    "ticker": "MMM",
+    "companyName": "3M",
+    "sector": "Industrials",
+    "cik": "0000066740",
+    "marketCapRank": 149,
+    "marketCapDisplay": "75.12B"
+  },
+  {
+    "ticker": "AOS",
+    "companyName": "A. O. Smith",
+    "sector": "Industrials",
+    "cik": "0000091142",
+    "marketCapRank": 482,
+    "marketCapDisplay": "8.94B"
+  },
+  {
+    "ticker": "ABT",
+    "companyName": "Abbott Laboratories",
+    "sector": "Health Care",
+    "cik": "0000001800",
+    "marketCapRank": 58,
+    "marketCapDisplay": "177.20B"
+  },
+  {
+    "ticker": "ABBV",
+    "companyName": "AbbVie",
+    "sector": "Health Care",
+    "cik": "0001551152",
+    "marketCapRank": 22,
+    "marketCapDisplay": "361.18B"
+  },
+  {
+    "ticker": "ACN",
+    "companyName": "Accenture",
+    "sector": "Information Technology",
+    "cik": "0001467373",
+    "marketCapRank": 90,
+    "marketCapDisplay": "122.79B"
+  },
+  {
+    "ticker": "ADBE",
+    "companyName": "Adobe Inc.",
+    "sector": "Information Technology",
+    "cik": "0000796343",
+    "marketCapRank": 114,
+    "marketCapDisplay": "98.76B"
+  },
+  {
+    "ticker": "AMD",
+    "companyName": "Advanced Micro Devices",
+    "sector": "Information Technology",
+    "cik": "0000002488",
+    "marketCapRank": 23,
+    "marketCapDisplay": "358.28B"
+  },
+  {
+    "ticker": "AES",
+    "companyName": "AES Corporation",
+    "sector": "Utilities",
+    "cik": "0000874761",
+    "marketCapRank": 474,
+    "marketCapDisplay": "10.17B"
+  },
+  {
+    "ticker": "AFL",
+    "companyName": "Aflac",
+    "sector": "Financials",
+    "cik": "0000004977",
+    "marketCapRank": 196,
+    "marketCapDisplay": "56.87B"
+  },
+  {
+    "ticker": "A",
+    "companyName": "Agilent Technologies",
+    "sector": "Health Care",
+    "cik": "0001090872",
+    "marketCapRank": 282,
+    "marketCapDisplay": "32.45B"
+  },
+  {
+    "ticker": "APD",
+    "companyName": "Air Products",
+    "sector": "Materials",
+    "cik": "0000002969",
+    "marketCapRank": 178,
+    "marketCapDisplay": "65.46B"
+  },
+  {
+    "ticker": "ABNB",
+    "companyName": "Airbnb",
+    "sector": "Consumer Discretionary",
+    "cik": "0001559720",
+    "marketCapRank": 146,
+    "marketCapDisplay": "75.47B"
+  },
+  {
+    "ticker": "AKAM",
+    "companyName": "Akamai Technologies",
+    "sector": "Information Technology",
+    "cik": "0001086222",
+    "marketCapRank": 413,
+    "marketCapDisplay": "16.64B"
+  },
+  {
+    "ticker": "ALB",
+    "companyName": "Albemarle Corporation",
+    "sector": "Materials",
+    "cik": "0000915913",
+    "marketCapRank": 379,
+    "marketCapDisplay": "20.65B"
+  },
+  {
+    "ticker": "ARE",
+    "companyName": "Alexandria Real Estate Equities",
+    "sector": "Real Estate",
+    "cik": "0001035443",
+    "marketCapRank": 495,
+    "marketCapDisplay": "7.39B"
+  },
+  {
+    "ticker": "ALGN",
+    "companyName": "Align Technology",
+    "sector": "Health Care",
+    "cik": "0001097149",
+    "marketCapRank": 452,
+    "marketCapDisplay": "12.25B"
+  },
+  {
+    "ticker": "ALLE",
+    "companyName": "Allegion",
+    "sector": "Industrials",
+    "cik": "0001579241",
+    "marketCapRank": 453,
+    "marketCapDisplay": "12.14B"
+  },
+  {
+    "ticker": "LNT",
+    "companyName": "Alliant Energy",
+    "sector": "Utilities",
+    "cik": "0000352541",
+    "marketCapRank": 394,
+    "marketCapDisplay": "18.71B"
+  },
+  {
+    "ticker": "ALL",
+    "companyName": "Allstate",
+    "sector": "Financials",
+    "cik": "0000899051",
+    "marketCapRank": 204,
+    "marketCapDisplay": "54.08B"
+  },
+  {
+    "ticker": "GOOGL",
+    "companyName": "Alphabet Inc. (Class A)",
+    "sector": "Communication Services",
+    "cik": "0001652044",
+    "marketCapRank": 3,
+    "marketCapDisplay": "3.64T"
+  },
+  {
+    "ticker": "MO",
+    "companyName": "Altria",
+    "sector": "Consumer Staples",
+    "cik": "0000764180",
+    "marketCapRank": 99,
+    "marketCapDisplay": "111.26B"
+  },
+  {
+    "ticker": "AMZN",
+    "companyName": "Amazon",
+    "sector": "Consumer Discretionary",
+    "cik": "0001018724",
+    "marketCapRank": 5,
+    "marketCapDisplay": "2.27T"
+  },
+  {
+    "ticker": "AMCR",
+    "companyName": "Amcor",
+    "sector": "Materials",
+    "cik": "0001748790",
+    "marketCapRank": 400,
+    "marketCapDisplay": "18.37B"
+  },
+  {
+    "ticker": "AEE",
+    "companyName": "Ameren",
+    "sector": "Utilities",
+    "cik": "0001002910",
+    "marketCapRank": 295,
+    "marketCapDisplay": "30.83B"
+  },
+  {
+    "ticker": "AEP",
+    "companyName": "American Electric Power",
+    "sector": "Utilities",
+    "cik": "0000004904",
+    "marketCapRank": 162,
+    "marketCapDisplay": "71.46B"
+  },
+  {
+    "ticker": "AXP",
+    "companyName": "American Express",
+    "sector": "Financials",
+    "cik": "0000004962",
+    "marketCapRank": 48,
+    "marketCapDisplay": "208.40B"
+  },
+  {
+    "ticker": "AIG",
+    "companyName": "American International Group",
+    "sector": "Financials",
+    "cik": "0000005272",
+    "marketCapRank": 245,
+    "marketCapDisplay": "40.87B"
+  },
+  {
+    "ticker": "AMT",
+    "companyName": "American Tower",
+    "sector": "Real Estate",
+    "cik": "0001053507",
+    "marketCapRank": 135,
+    "marketCapDisplay": "81.77B"
+  },
+  {
+    "ticker": "AWK",
+    "companyName": "American Water Works",
+    "sector": "Utilities",
+    "cik": "0001410636",
+    "marketCapRank": 324,
+    "marketCapDisplay": "26.93B"
+  },
+  {
+    "ticker": "AMP",
+    "companyName": "Ameriprise Financial",
+    "sector": "Financials",
+    "cik": "0000820027",
+    "marketCapRank": 251,
+    "marketCapDisplay": "39.03B"
+  },
+  {
+    "ticker": "AME",
+    "companyName": "Ametek",
+    "sector": "Industrials",
+    "cik": "0001037868",
+    "marketCapRank": 218,
+    "marketCapDisplay": "49.88B"
+  },
+  {
+    "ticker": "AMGN",
+    "companyName": "Amgen",
+    "sector": "Health Care",
+    "cik": "0000318154",
+    "marketCapRank": 54,
+    "marketCapDisplay": "182.39B"
+  },
+  {
+    "ticker": "APH",
+    "companyName": "Amphenol",
+    "sector": "Information Technology",
+    "cik": "0000820313",
+    "marketCapRank": 71,
+    "marketCapDisplay": "153.12B"
+  },
+  {
+    "ticker": "ADI",
+    "companyName": "Analog Devices",
+    "sector": "Information Technology",
+    "cik": "0000006281",
+    "marketCapRank": 67,
+    "marketCapDisplay": "157.50B"
+  },
+  {
+    "ticker": "AON",
+    "companyName": "Aon plc",
+    "sector": "Financials",
+    "cik": "0000315293",
+    "marketCapRank": 166,
+    "marketCapDisplay": "69.88B"
+  },
+  {
+    "ticker": "APA",
+    "companyName": "APA Corporation",
+    "sector": "Energy",
+    "cik": "0001841666",
+    "marketCapRank": 420,
+    "marketCapDisplay": "15.42B"
+  },
+  {
+    "ticker": "APO",
+    "companyName": "Apollo Global Management",
+    "sector": "Financials",
+    "cik": "0001858681",
+    "marketCapRank": 188,
+    "marketCapDisplay": "61.37B"
+  },
+  {
+    "ticker": "AAPL",
+    "companyName": "Apple Inc.",
+    "sector": "Information Technology",
+    "cik": "0000320193",
+    "marketCapRank": 2,
+    "marketCapDisplay": "3.73T"
+  },
+  {
+    "ticker": "AMAT",
+    "companyName": "Applied Materials",
+    "sector": "Information Technology",
+    "cik": "0000006951",
+    "marketCapRank": 34,
+    "marketCapDisplay": "276.95B"
+  },
+  {
+    "ticker": "APP",
+    "companyName": "AppLovin",
+    "sector": "Information Technology",
+    "cik": "0001751008",
+    "marketCapRank": 78,
+    "marketCapDisplay": "139.09B"
+  },
+  {
+    "ticker": "APTV",
+    "companyName": "Aptiv",
+    "sector": "Consumer Discretionary",
+    "cik": "0001521332",
+    "marketCapRank": 448,
+    "marketCapDisplay": "12.64B"
+  },
+  {
+    "ticker": "ACGL",
+    "companyName": "Arch Capital Group",
+    "sector": "Financials",
+    "cik": "0000947484",
+    "marketCapRank": 272,
+    "marketCapDisplay": "34.46B"
+  },
+  {
+    "ticker": "ADM",
+    "companyName": "Archer Daniels Midland",
+    "sector": "Consumer Staples",
+    "cik": "0000007084",
+    "marketCapRank": 268,
+    "marketCapDisplay": "35.34B"
+  },
+  {
+    "ticker": "ARES",
+    "companyName": "Ares Management",
+    "sector": "Financials",
+    "cik": "0001176948",
+    "marketCapRank": 275,
+    "marketCapDisplay": "33.62B"
+  },
+  {
+    "ticker": "ANET",
+    "companyName": "Arista Networks",
+    "sector": "Information Technology",
+    "cik": "0001596532",
+    "marketCapRank": 63,
+    "marketCapDisplay": "162.92B"
+  },
+  {
+    "ticker": "AJG",
+    "companyName": "Arthur J. Gallagher & Co.",
+    "sector": "Financials",
+    "cik": "0000354190",
+    "marketCapRank": 199,
+    "marketCapDisplay": "56.24B"
+  },
+  {
+    "ticker": "AIZ",
+    "companyName": "Assurant",
+    "sector": "Financials",
+    "cik": "0001267238",
+    "marketCapRank": 467,
+    "marketCapDisplay": "10.83B"
+  },
+  {
+    "ticker": "T",
+    "companyName": "AT&T",
+    "sector": "Communication Services",
+    "cik": "0000732717",
+    "marketCapRank": 52,
+    "marketCapDisplay": "197.91B"
+  },
+  {
+    "ticker": "ATO",
+    "companyName": "Atmos Energy",
+    "sector": "Utilities",
+    "cik": "0000731802",
+    "marketCapRank": 292,
+    "marketCapDisplay": "31.07B"
+  },
+  {
+    "ticker": "ADSK",
+    "companyName": "Autodesk",
+    "sector": "Information Technology",
+    "cik": "0000769397",
+    "marketCapRank": 214,
+    "marketCapDisplay": "50.03B"
+  },
+  {
+    "ticker": "ADP",
+    "companyName": "Automatic Data Processing",
+    "sector": "Industrials",
+    "cik": "0000008670",
+    "marketCapRank": 133,
+    "marketCapDisplay": "82.25B"
+  },
+  {
+    "ticker": "AZO",
+    "companyName": "AutoZone",
+    "sector": "Consumer Discretionary",
+    "cik": "0000866787",
+    "marketCapRank": 197,
+    "marketCapDisplay": "56.65B"
+  },
+  {
+    "ticker": "AVB",
+    "companyName": "AvalonBay Communities",
+    "sector": "Real Estate",
+    "cik": "0000915912",
+    "marketCapRank": 353,
+    "marketCapDisplay": "23.47B"
+  },
+  {
+    "ticker": "AVY",
+    "companyName": "Avery Dennison",
+    "sector": "Materials",
+    "cik": "0000008818",
+    "marketCapRank": 444,
+    "marketCapDisplay": "13.03B"
+  },
+  {
+    "ticker": "AXON",
+    "companyName": "Axon Enterprise",
+    "sector": "Industrials",
+    "cik": "0001069183",
+    "marketCapRank": 279,
+    "marketCapDisplay": "32.72B"
+  },
+  {
+    "ticker": "BKR",
+    "companyName": "Baker Hughes",
+    "sector": "Energy",
+    "cik": "0001701605",
+    "marketCapRank": 192,
+    "marketCapDisplay": "59.94B"
+  },
+  {
+    "ticker": "BALL",
+    "companyName": "Ball Corporation",
+    "sector": "Materials",
+    "cik": "0000009389",
+    "marketCapRank": 417,
+    "marketCapDisplay": "15.90B"
+  },
+  {
+    "ticker": "BAC",
+    "companyName": "Bank of America",
+    "sector": "Financials",
+    "cik": "0000070858",
+    "marketCapRank": 24,
+    "marketCapDisplay": "356.50B"
+  },
+  {
+    "ticker": "BAX",
+    "companyName": "Baxter International",
+    "sector": "Health Care",
+    "cik": "0000010456",
+    "marketCapRank": 485,
+    "marketCapDisplay": "8.57B"
+  },
+  {
+    "ticker": "BDX",
+    "companyName": "Becton Dickinson",
+    "sector": "Health Care",
+    "cik": "0000010795",
+    "marketCapRank": 232,
+    "marketCapDisplay": "44.27B"
+  },
+  {
+    "ticker": "BRK.B",
+    "companyName": "Berkshire Hathaway",
+    "sector": "Financials",
+    "cik": "0001067983",
+    "marketCapRank": 9,
+    "marketCapDisplay": "1.03T"
+  },
+  {
+    "ticker": "BBY",
+    "companyName": "Best Buy",
+    "sector": "Consumer Discretionary",
+    "cik": "0000764478",
+    "marketCapRank": 440,
+    "marketCapDisplay": "13.35B"
+  },
+  {
+    "ticker": "TECH",
+    "companyName": "Bio-Techne",
+    "sector": "Health Care",
+    "cik": "0000842023",
+    "marketCapRank": 490,
+    "marketCapDisplay": "8.28B"
+  },
+  {
+    "ticker": "BIIB",
+    "companyName": "Biogen",
+    "sector": "Health Care",
+    "cik": "0000875045",
+    "marketCapRank": 337,
+    "marketCapDisplay": "25.30B"
+  },
+  {
+    "ticker": "BLK",
+    "companyName": "BlackRock",
+    "sector": "Financials",
+    "cik": "0002012383",
+    "marketCapRank": 68,
+    "marketCapDisplay": "156.23B"
+  },
+  {
+    "ticker": "BX",
+    "companyName": "Blackstone Inc.",
+    "sector": "Financials",
+    "cik": "0001393818",
+    "marketCapRank": 80,
+    "marketCapDisplay": "136.97B"
+  },
+  {
+    "ticker": "XYZ",
+    "companyName": "Block, Inc.",
+    "sector": "Financials",
+    "cik": "0001512673",
+    "marketCapRank": 267,
+    "marketCapDisplay": "35.99B"
+  },
+  {
+    "ticker": "BK",
+    "companyName": "BNY Mellon",
+    "sector": "Financials",
+    "cik": "0001390777",
+    "marketCapRank": 129,
+    "marketCapDisplay": "84.70B"
+  },
+  {
+    "ticker": "BA",
+    "companyName": "Boeing",
+    "sector": "Industrials",
+    "cik": "0000012927",
+    "marketCapRank": 62,
+    "marketCapDisplay": "165.35B"
+  },
+  {
+    "ticker": "BKNG",
+    "companyName": "Booking Holdings",
+    "sector": "Consumer Discretionary",
+    "cik": "0001075531",
+    "marketCapRank": 79,
+    "marketCapDisplay": "138.73B"
+  },
+  {
+    "ticker": "BSX",
+    "companyName": "Boston Scientific",
+    "sector": "Health Care",
+    "cik": "0000885725",
+    "marketCapRank": 123,
+    "marketCapDisplay": "92.02B"
+  },
+  {
+    "ticker": "BMY",
+    "companyName": "Bristol Myers Squibb",
+    "sector": "Health Care",
+    "cik": "0000014272",
+    "marketCapRank": 92,
+    "marketCapDisplay": "119.95B"
+  },
+  {
+    "ticker": "AVGO",
+    "companyName": "Broadcom",
+    "sector": "Information Technology",
+    "cik": "0001730168",
+    "marketCapRank": 6,
+    "marketCapDisplay": "1.54T"
+  },
+  {
+    "ticker": "BR",
+    "companyName": "Broadridge Financial Solutions",
+    "sector": "Industrials",
+    "cik": "0001383312",
+    "marketCapRank": 391,
+    "marketCapDisplay": "18.97B"
+  },
+  {
+    "ticker": "BRO",
+    "companyName": "Brown & Brown",
+    "sector": "Financials",
+    "cik": "0000079282",
+    "marketCapRank": 360,
+    "marketCapDisplay": "22.59B"
+  },
+  {
+    "ticker": "BF.B",
+    "companyName": "Brown\u2013Forman",
+    "sector": "Consumer Staples",
+    "cik": "0000014693",
+    "marketCapRank": 451,
+    "marketCapDisplay": "12.26B"
+  },
+  {
+    "ticker": "BLDR",
+    "companyName": "Builders FirstSource",
+    "sector": "Industrials",
+    "cik": "0001316835",
+    "marketCapRank": 481,
+    "marketCapDisplay": "8.95B"
+  },
+  {
+    "ticker": "BG",
+    "companyName": "Bunge Global",
+    "sector": "Consumer Staples",
+    "cik": "0001996862",
+    "marketCapRank": 344,
+    "marketCapDisplay": "24.68B"
+  },
+  {
+    "ticker": "BXP",
+    "companyName": "BXP, Inc.",
+    "sector": "Real Estate",
+    "cik": "0001037540",
+    "marketCapRank": 480,
+    "marketCapDisplay": "9.21B"
+  },
+  {
+    "ticker": "CHRW",
+    "companyName": "C.H. Robinson",
+    "sector": "Industrials",
+    "cik": "0001043277",
+    "marketCapRank": 384,
+    "marketCapDisplay": "19.92B"
+  },
+  {
+    "ticker": "CDNS",
+    "companyName": "Cadence Design Systems",
+    "sector": "Information Technology",
+    "cik": "0000813672",
+    "marketCapRank": 143,
+    "marketCapDisplay": "76.85B"
+  },
+  {
+    "ticker": "CPT",
+    "companyName": "Camden Property Trust",
+    "sector": "Real Estate",
+    "cik": "0000906345",
+    "marketCapRank": 468,
+    "marketCapDisplay": "10.75B"
+  },
+  {
+    "ticker": "CPB",
+    "companyName": "Campbell's Company (The)",
+    "sector": "Consumer Staples",
+    "cik": "0000016732",
+    "marketCapRank": 496,
+    "marketCapDisplay": "6.51B"
+  },
+  {
+    "ticker": "COF",
+    "companyName": "Capital One",
+    "sector": "Financials",
+    "cik": "0000927628",
+    "marketCapRank": 96,
+    "marketCapDisplay": "113.34B"
+  },
+  {
+    "ticker": "CAH",
+    "companyName": "Cardinal Health",
+    "sector": "Health Care",
+    "cik": "0000721371",
+    "marketCapRank": 217,
+    "marketCapDisplay": "49.90B"
+  },
+  {
+    "ticker": "CCL",
+    "companyName": "Carnival",
+    "sector": "Consumer Discretionary",
+    "cik": "0000815097",
+    "marketCapRank": 269,
+    "marketCapDisplay": "35.11B"
+  },
+  {
+    "ticker": "CARR",
+    "companyName": "Carrier Global",
+    "sector": "Industrials",
+    "cik": "0001783180",
+    "marketCapRank": 226,
+    "marketCapDisplay": "46.20B"
+  },
+  {
+    "ticker": "CVNA",
+    "companyName": "Carvana",
+    "sector": "Consumer Discretionary",
+    "cik": "0001690820",
+    "marketCapRank": 169,
+    "marketCapDisplay": "68.92B"
+  },
+  {
+    "ticker": "CAT",
+    "companyName": "Caterpillar Inc.",
+    "sector": "Industrials",
+    "cik": "0000018230",
+    "marketCapRank": 26,
+    "marketCapDisplay": "334.38B"
+  },
+  {
+    "ticker": "CBOE",
+    "companyName": "Cboe Global Markets",
+    "sector": "Financials",
+    "cik": "0001374310",
+    "marketCapRank": 294,
+    "marketCapDisplay": "30.90B"
+  },
+  {
+    "ticker": "CBRE",
+    "companyName": "CBRE Group",
+    "sector": "Real Estate",
+    "cik": "0001138118",
+    "marketCapRank": 250,
+    "marketCapDisplay": "39.57B"
+  },
+  {
+    "ticker": "CDW",
+    "companyName": "CDW Corporation",
+    "sector": "Information Technology",
+    "cik": "0001402057",
+    "marketCapRank": 418,
+    "marketCapDisplay": "15.87B"
+  },
+  {
+    "ticker": "COR",
+    "companyName": "Cencora",
+    "sector": "Health Care",
+    "cik": "0001140859",
+    "marketCapRank": 185,
+    "marketCapDisplay": "62.44B"
+  },
+  {
+    "ticker": "CNC",
+    "companyName": "Centene Corporation",
+    "sector": "Health Care",
+    "cik": "0001071739",
+    "marketCapRank": 403,
+    "marketCapDisplay": "18.06B"
+  },
+  {
+    "ticker": "CNP",
+    "companyName": "CenterPoint Energy",
+    "sector": "Utilities",
+    "cik": "0001130310",
+    "marketCapRank": 314,
+    "marketCapDisplay": "27.96B"
+  },
+  {
+    "ticker": "CF",
+    "companyName": "CF Industries",
+    "sector": "Materials",
+    "cik": "0001324404",
+    "marketCapRank": 377,
+    "marketCapDisplay": "20.74B"
+  },
+  {
+    "ticker": "CRL",
+    "companyName": "Charles River Laboratories",
+    "sector": "Health Care",
+    "cik": "0001100682",
+    "marketCapRank": 491,
+    "marketCapDisplay": "8.24B"
+  },
+  {
+    "ticker": "SCHW",
+    "companyName": "Charles Schwab Corporation",
+    "sector": "Financials",
+    "cik": "0000316709",
+    "marketCapRank": 65,
+    "marketCapDisplay": "159.89B"
+  },
+  {
+    "ticker": "CHTR",
+    "companyName": "Charter Communications",
+    "sector": "Communication Services",
+    "cik": "0001091667",
+    "marketCapRank": 291,
+    "marketCapDisplay": "31.13B"
+  },
+  {
+    "ticker": "CVX",
+    "companyName": "Chevron Corporation",
+    "sector": "Energy",
+    "cik": "0000093410",
+    "marketCapRank": 21,
+    "marketCapDisplay": "400.27B"
+  },
+  {
+    "ticker": "CMG",
+    "companyName": "Chipotle Mexican Grill",
+    "sector": "Consumer Discretionary",
+    "cik": "0001058090",
+    "marketCapRank": 233,
+    "marketCapDisplay": "43.72B"
+  },
+  {
+    "ticker": "CB",
+    "companyName": "Chubb Limited",
+    "sector": "Financials",
+    "cik": "0000896159",
+    "marketCapRank": 86,
+    "marketCapDisplay": "127.52B"
+  },
+  {
+    "ticker": "CHD",
+    "companyName": "Church & Dwight",
+    "sector": "Consumer Staples",
+    "cik": "0000313927",
+    "marketCapRank": 367,
+    "marketCapDisplay": "22.06B"
+  },
+  {
+    "ticker": "CIEN",
+    "companyName": "Ciena",
+    "sector": "Information Technology",
+    "cik": "0000936395",
+    "marketCapRank": 191,
+    "marketCapDisplay": "60.52B"
+  },
+  {
+    "ticker": "CI",
+    "companyName": "Cigna",
+    "sector": "Health Care",
+    "cik": "0001739940",
+    "marketCapRank": 157,
+    "marketCapDisplay": "73.22B"
+  },
+  {
+    "ticker": "CINF",
+    "companyName": "Cincinnati Financial",
+    "sector": "Financials",
+    "cik": "0000020286",
+    "marketCapRank": 343,
+    "marketCapDisplay": "24.77B"
+  },
+  {
+    "ticker": "CTAS",
+    "companyName": "Cintas",
+    "sector": "Industrials",
+    "cik": "0000723254",
+    "marketCapRank": 170,
+    "marketCapDisplay": "68.82B"
+  },
+  {
+    "ticker": "CSCO",
+    "companyName": "Cisco",
+    "sector": "Information Technology",
+    "cik": "0000858877",
+    "marketCapRank": 30,
+    "marketCapDisplay": "315.28B"
+  },
+  {
+    "ticker": "C",
+    "companyName": "Citigroup",
+    "sector": "Financials",
+    "cik": "0000831001",
+    "marketCapRank": 50,
+    "marketCapDisplay": "204.50B"
+  },
+  {
+    "ticker": "CFG",
+    "companyName": "Citizens Financial Group",
+    "sector": "Financials",
+    "cik": "0000759944",
+    "marketCapRank": 328,
+    "marketCapDisplay": "26.10B"
+  },
+  {
+    "ticker": "CLX",
+    "companyName": "Clorox",
+    "sector": "Consumer Staples",
+    "cik": "0000021076",
+    "marketCapRank": 447,
+    "marketCapDisplay": "12.64B"
+  },
+  {
+    "ticker": "CME",
+    "companyName": "CME Group",
+    "sector": "Financials",
+    "cik": "0001156375",
+    "marketCapRank": 98,
+    "marketCapDisplay": "111.27B"
+  },
+  {
+    "ticker": "CMS",
+    "companyName": "CMS Energy",
+    "sector": "Utilities",
+    "cik": "0000811156",
+    "marketCapRank": 348,
+    "marketCapDisplay": "24.13B"
+  },
+  {
+    "ticker": "KO",
+    "companyName": "Coca-Cola Company (The)",
+    "sector": "Consumer Staples",
+    "cik": "0000021344",
+    "marketCapRank": 27,
+    "marketCapDisplay": "332.24B"
+  },
+  {
+    "ticker": "CTSH",
+    "companyName": "Cognizant",
+    "sector": "Information Technology",
+    "cik": "0001058290",
+    "marketCapRank": 305,
+    "marketCapDisplay": "29.68B"
+  },
+  {
+    "ticker": "COHR",
+    "companyName": "Coherent Corp.",
+    "sector": "Information Technology",
+    "cik": "0000820318",
+    "marketCapRank": 497
+  },
+  {
+    "ticker": "COIN",
+    "companyName": "Coinbase",
+    "sector": "Financials",
+    "cik": "0001679788",
+    "marketCapRank": 230,
+    "marketCapDisplay": "45.42B"
+  },
+  {
+    "ticker": "CL",
+    "companyName": "Colgate-Palmolive",
+    "sector": "Consumer Staples",
+    "cik": "0000021665",
+    "marketCapRank": 173,
+    "marketCapDisplay": "67.68B"
+  },
+  {
+    "ticker": "CMCSA",
+    "companyName": "Comcast",
+    "sector": "Communication Services",
+    "cik": "0001166691",
+    "marketCapRank": 112,
+    "marketCapDisplay": "99.68B"
+  },
+  {
+    "ticker": "FIX",
+    "companyName": "Comfort Systems USA",
+    "sector": "Industrials",
+    "cik": "0001035983",
+    "marketCapRank": 211,
+    "marketCapDisplay": "50.11B"
+  },
+  {
+    "ticker": "CAG",
+    "companyName": "Conagra Brands",
+    "sector": "Consumer Staples",
+    "cik": "0000023217",
+    "marketCapRank": 492,
+    "marketCapDisplay": "7.59B"
+  },
+  {
+    "ticker": "COP",
+    "companyName": "ConocoPhillips",
+    "sector": "Energy",
+    "cik": "0001163165",
+    "marketCapRank": 64,
+    "marketCapDisplay": "161.46B"
+  },
+  {
+    "ticker": "ED",
+    "companyName": "Consolidated Edison",
+    "sector": "Utilities",
+    "cik": "0001047862",
+    "marketCapRank": 242,
+    "marketCapDisplay": "41.41B"
+  },
+  {
+    "ticker": "STZ",
+    "companyName": "Constellation Brands",
+    "sector": "Consumer Staples",
+    "cik": "0000016918",
+    "marketCapRank": 323,
+    "marketCapDisplay": "27.00B"
+  },
+  {
+    "ticker": "CEG",
+    "companyName": "Constellation Energy",
+    "sector": "Utilities",
+    "cik": "0001868275",
+    "marketCapRank": 115,
+    "marketCapDisplay": "98.75B"
+  },
+  {
+    "ticker": "COO",
+    "companyName": "Cooper Companies (The)",
+    "sector": "Health Care",
+    "cik": "0000711404",
+    "marketCapRank": 436,
+    "marketCapDisplay": "13.82B"
+  },
+  {
+    "ticker": "CPRT",
+    "companyName": "Copart",
+    "sector": "Industrials",
+    "cik": "0000900075",
+    "marketCapRank": 289,
+    "marketCapDisplay": "31.45B"
+  },
+  {
+    "ticker": "GLW",
+    "companyName": "Corning Inc.",
+    "sector": "Information Technology",
+    "cik": "0000024741",
+    "marketCapRank": 89,
+    "marketCapDisplay": "124.13B"
+  },
+  {
+    "ticker": "CPAY",
+    "companyName": "Corpay",
+    "sector": "Financials",
+    "cik": "0001175454",
+    "marketCapRank": 381,
+    "marketCapDisplay": "20.29B"
+  },
+  {
+    "ticker": "CTVA",
+    "companyName": "Corteva",
+    "sector": "Materials",
+    "cik": "0001755672",
+    "marketCapRank": 198,
+    "marketCapDisplay": "56.64B"
+  },
+  {
+    "ticker": "CSGP",
+    "companyName": "CoStar Group",
+    "sector": "Real Estate",
+    "cik": "0001057352",
+    "marketCapRank": 407,
+    "marketCapDisplay": "17.48B"
+  },
+  {
+    "ticker": "COST",
+    "companyName": "Costco",
+    "sector": "Consumer Staples",
+    "cik": "0000909832",
+    "marketCapRank": 16,
+    "marketCapDisplay": "452.09B"
+  },
+  {
+    "ticker": "CTRA",
+    "companyName": "Coterra",
+    "sector": "Energy",
+    "cik": "0000858470",
+    "marketCapRank": 325,
+    "marketCapDisplay": "26.62B"
+  },
+  {
+    "ticker": "CRH",
+    "companyName": "CRH plc",
+    "sector": "Materials",
+    "cik": "0000849395",
+    "marketCapRank": 165,
+    "marketCapDisplay": "69.95B"
+  },
+  {
+    "ticker": "CRWD",
+    "companyName": "CrowdStrike",
+    "sector": "Information Technology",
+    "cik": "0001535527",
+    "marketCapRank": 110,
+    "marketCapDisplay": "101.55B"
+  },
+  {
+    "ticker": "CCI",
+    "companyName": "Crown Castle",
+    "sector": "Real Estate",
+    "cik": "0001051470",
+    "marketCapRank": 257,
+    "marketCapDisplay": "37.85B"
+  },
+  {
+    "ticker": "CSX",
+    "companyName": "CSX Corporation",
+    "sector": "Industrials",
+    "cik": "0000277948",
+    "marketCapRank": 144,
+    "marketCapDisplay": "76.69B"
+  },
+  {
+    "ticker": "CMI",
+    "companyName": "Cummins",
+    "sector": "Industrials",
+    "cik": "0000026172",
+    "marketCapRank": 145,
+    "marketCapDisplay": "75.95B"
+  },
+  {
+    "ticker": "CVS",
+    "companyName": "CVS Health",
+    "sector": "Health Care",
+    "cik": "0000064803",
+    "marketCapRank": 116,
+    "marketCapDisplay": "98.33B"
+  },
+  {
+    "ticker": "DHR",
+    "companyName": "Danaher Corporation",
+    "sector": "Health Care",
+    "cik": "0000313616",
+    "marketCapRank": 81,
+    "marketCapDisplay": "135.96B"
+  },
+  {
+    "ticker": "DRI",
+    "companyName": "Darden Restaurants",
+    "sector": "Consumer Discretionary",
+    "cik": "0000940944",
+    "marketCapRank": 361,
+    "marketCapDisplay": "22.51B"
+  },
+  {
+    "ticker": "DDOG",
+    "companyName": "Datadog",
+    "sector": "Information Technology",
+    "cik": "0001561550",
+    "marketCapRank": 244,
+    "marketCapDisplay": "40.89B"
+  },
+  {
+    "ticker": "DVA",
+    "companyName": "DaVita",
+    "sector": "Health Care",
+    "cik": "0000927066",
+    "marketCapRank": 475,
+    "marketCapDisplay": "9.95B"
+  },
+  {
+    "ticker": "DECK",
+    "companyName": "Deckers Brands",
+    "sector": "Consumer Discretionary",
+    "cik": "0000910521",
+    "marketCapRank": 431,
+    "marketCapDisplay": "14.43B"
+  },
+  {
+    "ticker": "DE",
+    "companyName": "Deere & Company",
+    "sector": "Industrials",
+    "cik": "0000315189",
+    "marketCapRank": 70,
+    "marketCapDisplay": "154.54B"
+  },
+  {
+    "ticker": "DELL",
+    "companyName": "Dell Technologies",
+    "sector": "Information Technology",
+    "cik": "0001571996",
+    "marketCapRank": 97,
+    "marketCapDisplay": "111.83B"
+  },
+  {
+    "ticker": "DAL",
+    "companyName": "Delta Air Lines",
+    "sector": "Industrials",
+    "cik": "0000027904",
+    "marketCapRank": 238,
+    "marketCapDisplay": "42.65B"
+  },
+  {
+    "ticker": "DVN",
+    "companyName": "Devon Energy",
+    "sector": "Energy",
+    "cik": "0001090012",
+    "marketCapRank": 290,
+    "marketCapDisplay": "31.17B"
+  },
+  {
+    "ticker": "DXCM",
+    "companyName": "Dexcom",
+    "sector": "Health Care",
+    "cik": "0001093557",
+    "marketCapRank": 345,
+    "marketCapDisplay": "24.44B"
+  },
+  {
+    "ticker": "FANG",
+    "companyName": "Diamondback Energy",
+    "sector": "Energy",
+    "cik": "0001539838",
+    "marketCapRank": 202,
+    "marketCapDisplay": "55.27B"
+  },
+  {
+    "ticker": "DLR",
+    "companyName": "Digital Realty",
+    "sector": "Real Estate",
+    "cik": "0001297996",
+    "marketCapRank": 183,
+    "marketCapDisplay": "62.96B"
+  },
+  {
+    "ticker": "DG",
+    "companyName": "Dollar General",
+    "sector": "Consumer Staples",
+    "cik": "0000029534",
+    "marketCapRank": 321,
+    "marketCapDisplay": "27.53B"
+  },
+  {
+    "ticker": "DLTR",
+    "companyName": "Dollar Tree",
+    "sector": "Consumer Staples",
+    "cik": "0000935703",
+    "marketCapRank": 373,
+    "marketCapDisplay": "21.59B"
+  },
+  {
+    "ticker": "D",
+    "companyName": "Dominion Energy",
+    "sector": "Utilities",
+    "cik": "0000715957",
+    "marketCapRank": 203,
+    "marketCapDisplay": "54.71B"
+  },
+  {
+    "ticker": "DPZ",
+    "companyName": "Domino's",
+    "sector": "Consumer Discretionary",
+    "cik": "0001286681",
+    "marketCapRank": 445,
+    "marketCapDisplay": "12.81B"
+  },
+  {
+    "ticker": "DASH",
+    "companyName": "DoorDash",
+    "sector": "Consumer Discretionary",
+    "cik": "0001792789",
+    "marketCapRank": 175,
+    "marketCapDisplay": "67.05B"
+  },
+  {
+    "ticker": "DOV",
+    "companyName": "Dover Corporation",
+    "sector": "Industrials",
+    "cik": "0000029905",
+    "marketCapRank": 316,
+    "marketCapDisplay": "27.90B"
+  },
+  {
+    "ticker": "DOW",
+    "companyName": "Dow Inc.",
+    "sector": "Materials",
+    "cik": "0001751788",
+    "marketCapRank": 303,
+    "marketCapDisplay": "29.74B"
+  },
+  {
+    "ticker": "DHI",
+    "companyName": "D. R. Horton",
+    "sector": "Consumer Discretionary",
+    "cik": "0000882184",
+    "marketCapRank": 247,
+    "marketCapDisplay": "40.37B"
+  },
+  {
+    "ticker": "DTE",
+    "companyName": "DTE Energy",
+    "sector": "Utilities",
+    "cik": "0000936340",
+    "marketCapRank": 298,
+    "marketCapDisplay": "30.72B"
+  },
+  {
+    "ticker": "DUK",
+    "companyName": "Duke Energy",
+    "sector": "Utilities",
+    "cik": "0001326160",
+    "marketCapRank": 108,
+    "marketCapDisplay": "102.44B"
+  },
+  {
+    "ticker": "DD",
+    "companyName": "DuPont",
+    "sector": "Materials",
+    "cik": "0001666700",
+    "marketCapRank": 395,
+    "marketCapDisplay": "18.65B"
+  },
+  {
+    "ticker": "ETN",
+    "companyName": "Eaton Corporation",
+    "sector": "Industrials",
+    "cik": "0001551182",
+    "marketCapRank": 76,
+    "marketCapDisplay": "140.84B"
+  },
+  {
+    "ticker": "EBAY",
+    "companyName": "eBay Inc.",
+    "sector": "Consumer Discretionary",
+    "cik": "0001065088",
+    "marketCapRank": 234,
+    "marketCapDisplay": "43.65B"
+  },
+  {
+    "ticker": "SATS",
+    "companyName": "EchoStar",
+    "sector": "Communication Services",
+    "cik": "0001415404",
+    "marketCapRank": 498
+  },
+  {
+    "ticker": "ECL",
+    "companyName": "Ecolab",
+    "sector": "Materials",
+    "cik": "0000031462",
+    "marketCapRank": 150,
+    "marketCapDisplay": "75.06B"
+  },
+  {
+    "ticker": "EIX",
+    "companyName": "Edison International",
+    "sector": "Utilities",
+    "cik": "0000827052",
+    "marketCapRank": 319,
+    "marketCapDisplay": "27.80B"
+  },
+  {
+    "ticker": "EW",
+    "companyName": "Edwards Lifesciences",
+    "sector": "Health Care",
+    "cik": "0001099800",
+    "marketCapRank": 223,
+    "marketCapDisplay": "46.54B"
+  },
+  {
+    "ticker": "EA",
+    "companyName": "Electronic Arts",
+    "sector": "Communication Services",
+    "cik": "0000712515",
+    "marketCapRank": 210,
+    "marketCapDisplay": "50.99B"
+  },
+  {
+    "ticker": "ELV",
+    "companyName": "Elevance Health",
+    "sector": "Health Care",
+    "cik": "0001156039",
+    "marketCapRank": 168,
+    "marketCapDisplay": "69.44B"
+  },
+  {
+    "ticker": "EME",
+    "companyName": "Emcor",
+    "sector": "Industrials",
+    "cik": "0000105634",
+    "marketCapRank": 274,
+    "marketCapDisplay": "33.74B"
+  },
+  {
+    "ticker": "EMR",
+    "companyName": "Emerson Electric",
+    "sector": "Industrials",
+    "cik": "0000032604",
+    "marketCapRank": 154,
+    "marketCapDisplay": "74.17B"
+  },
+  {
+    "ticker": "ETR",
+    "companyName": "Entergy",
+    "sector": "Utilities",
+    "cik": "0000065984",
+    "marketCapRank": 208,
+    "marketCapDisplay": "52.39B"
+  },
+  {
+    "ticker": "EOG",
+    "companyName": "EOG Resources",
+    "sector": "Energy",
+    "cik": "0000821189",
+    "marketCapRank": 142,
+    "marketCapDisplay": "76.97B"
+  },
+  {
+    "ticker": "EPAM",
+    "companyName": "EPAM Systems",
+    "sector": "Information Technology",
+    "cik": "0001352010",
+    "marketCapRank": 494,
+    "marketCapDisplay": "7.41B"
+  },
+  {
+    "ticker": "EQT",
+    "companyName": "EQT Corporation",
+    "sector": "Energy",
+    "cik": "0000033213",
+    "marketCapRank": 255,
+    "marketCapDisplay": "38.07B"
+  },
+  {
+    "ticker": "EFX",
+    "companyName": "Equifax",
+    "sector": "Industrials",
+    "cik": "0000033185",
+    "marketCapRank": 366,
+    "marketCapDisplay": "22.09B"
+  },
+  {
+    "ticker": "EQIX",
+    "companyName": "Equinix",
+    "sector": "Real Estate",
+    "cik": "0001101239",
+    "marketCapRank": 113,
+    "marketCapDisplay": "99.24B"
+  },
+  {
+    "ticker": "EQR",
+    "companyName": "Equity Residential",
+    "sector": "Real Estate",
+    "cik": "0000906107",
+    "marketCapRank": 354,
+    "marketCapDisplay": "23.23B"
+  },
+  {
+    "ticker": "ERIE",
+    "companyName": "Erie Indemnity",
+    "sector": "Financials",
+    "cik": "0000922621",
+    "marketCapRank": 441,
+    "marketCapDisplay": "13.27B"
+  },
+  {
+    "ticker": "ESS",
+    "companyName": "Essex Property Trust",
+    "sector": "Real Estate",
+    "cik": "0000920522",
+    "marketCapRank": 414,
+    "marketCapDisplay": "16.53B"
+  },
+  {
+    "ticker": "EL",
+    "companyName": "Est\u00e9e Lauder Companies (The)",
+    "sector": "Consumer Staples",
+    "cik": "0001001250",
+    "marketCapRank": 336,
+    "marketCapDisplay": "25.34B"
+  },
+  {
+    "ticker": "EG",
+    "companyName": "Everest Group",
+    "sector": "Financials",
+    "cik": "0001095073",
+    "marketCapRank": 442,
+    "marketCapDisplay": "13.26B"
+  },
+  {
+    "ticker": "EVRG",
+    "companyName": "Evergy",
+    "sector": "Utilities",
+    "cik": "0001711269",
+    "marketCapRank": 390,
+    "marketCapDisplay": "19.03B"
+  },
+  {
+    "ticker": "ES",
+    "companyName": "Eversource Energy",
+    "sector": "Utilities",
+    "cik": "0000072741",
+    "marketCapRank": 329,
+    "marketCapDisplay": "26.10B"
+  },
+  {
+    "ticker": "EXC",
+    "companyName": "Exelon",
+    "sector": "Utilities",
+    "cik": "0001109357",
+    "marketCapRank": 213,
+    "marketCapDisplay": "50.04B"
+  },
+  {
+    "ticker": "EXE",
+    "companyName": "Expand Energy",
+    "sector": "Energy",
+    "cik": "0000895126",
+    "marketCapRank": 340,
+    "marketCapDisplay": "24.94B"
+  },
+  {
+    "ticker": "EXPE",
+    "companyName": "Expedia Group",
+    "sector": "Consumer Discretionary",
+    "cik": "0001324424",
+    "marketCapRank": 318,
+    "marketCapDisplay": "27.82B"
+  },
+  {
+    "ticker": "EXPD",
+    "companyName": "Expeditors International",
+    "sector": "Industrials",
+    "cik": "0000746515",
+    "marketCapRank": 388,
+    "marketCapDisplay": "19.35B"
+  },
+  {
+    "ticker": "EXR",
+    "companyName": "Extra Space Storage",
+    "sector": "Real Estate",
+    "cik": "0001289490",
+    "marketCapRank": 307,
+    "marketCapDisplay": "29.58B"
+  },
+  {
+    "ticker": "XOM",
+    "companyName": "ExxonMobil",
+    "sector": "Energy",
+    "cik": "0000034088",
+    "marketCapRank": 13,
+    "marketCapDisplay": "684.10B"
+  },
+  {
+    "ticker": "FFIV",
+    "companyName": "F5, Inc.",
+    "sector": "Information Technology",
+    "cik": "0001048695",
+    "marketCapRank": 416,
+    "marketCapDisplay": "15.99B"
+  },
+  {
+    "ticker": "FDS",
+    "companyName": "FactSet",
+    "sector": "Financials",
+    "cik": "0001013237",
+    "marketCapRank": 486,
+    "marketCapDisplay": "8.47B"
+  },
+  {
+    "ticker": "FICO",
+    "companyName": "Fair Isaac",
+    "sector": "Information Technology",
+    "cik": "0000814547",
+    "marketCapRank": 331,
+    "marketCapDisplay": "25.96B"
+  },
+  {
+    "ticker": "FAST",
+    "companyName": "Fastenal",
+    "sector": "Industrials",
+    "cik": "0000815556",
+    "marketCapRank": 207,
+    "marketCapDisplay": "52.50B"
+  },
+  {
+    "ticker": "FRT",
+    "companyName": "Federal Realty Investment Trust",
+    "sector": "Real Estate",
+    "cik": "0000034903",
+    "marketCapRank": 479,
+    "marketCapDisplay": "9.28B"
+  },
+  {
+    "ticker": "FDX",
+    "companyName": "FedEx",
+    "sector": "Industrials",
+    "cik": "0001048911",
+    "marketCapRank": 128,
+    "marketCapDisplay": "84.95B"
+  },
+  {
+    "ticker": "FIS",
+    "companyName": "Fidelity National Information Services",
+    "sector": "Financials",
+    "cik": "0001136893",
+    "marketCapRank": 349,
+    "marketCapDisplay": "24.01B"
+  },
+  {
+    "ticker": "FITB",
+    "companyName": "Fifth Third Bancorp",
+    "sector": "Financials",
+    "cik": "0000035527",
+    "marketCapRank": 237,
+    "marketCapDisplay": "42.80B"
+  },
+  {
+    "ticker": "FSLR",
+    "companyName": "First Solar",
+    "sector": "Information Technology",
+    "cik": "0001274494",
+    "marketCapRank": 378,
+    "marketCapDisplay": "20.67B"
+  },
+  {
+    "ticker": "FE",
+    "companyName": "FirstEnergy",
+    "sector": "Utilities",
+    "cik": "0001031296",
+    "marketCapRank": 308,
+    "marketCapDisplay": "29.53B"
+  },
+  {
+    "ticker": "FISV",
+    "companyName": "Fiserv",
+    "sector": "Financials",
+    "cik": "0000798354",
+    "marketCapRank": 302,
+    "marketCapDisplay": "30.24B"
+  },
+  {
+    "ticker": "F",
+    "companyName": "Ford Motor Company",
+    "sector": "Consumer Discretionary",
+    "cik": "0000037996",
+    "marketCapRank": 225,
+    "marketCapDisplay": "46.25B"
+  },
+  {
+    "ticker": "FTNT",
+    "companyName": "Fortinet",
+    "sector": "Information Technology",
+    "cik": "0001262039",
+    "marketCapRank": 190,
+    "marketCapDisplay": "60.56B"
+  },
+  {
+    "ticker": "FTV",
+    "companyName": "Fortive",
+    "sector": "Industrials",
+    "cik": "0001659166",
+    "marketCapRank": 408,
+    "marketCapDisplay": "17.38B"
+  },
+  {
+    "ticker": "FOXA",
+    "companyName": "Fox Corporation (Class A)",
+    "sector": "Communication Services",
+    "cik": "0001754301",
+    "marketCapRank": 338,
+    "marketCapDisplay": "25.21B"
+  },
+  {
+    "ticker": "BEN",
+    "companyName": "Franklin Resources",
+    "sector": "Financials",
+    "cik": "0000038777",
+    "marketCapRank": 455,
+    "marketCapDisplay": "12.04B"
+  },
+  {
+    "ticker": "FCX",
+    "companyName": "Freeport-McMoRan",
+    "sector": "Materials",
+    "cik": "0000831259",
+    "marketCapRank": 126,
+    "marketCapDisplay": "87.18B"
+  },
+  {
+    "ticker": "GRMN",
+    "companyName": "Garmin",
+    "sector": "Consumer Discretionary",
+    "cik": "0001121788",
+    "marketCapRank": 224,
+    "marketCapDisplay": "46.27B"
+  },
+  {
+    "ticker": "IT",
+    "companyName": "Gartner",
+    "sector": "Information Technology",
+    "cik": "0000749251",
+    "marketCapRank": 466,
+    "marketCapDisplay": "10.88B"
+  },
+  {
+    "ticker": "GE",
+    "companyName": "GE Aerospace",
+    "sector": "Industrials",
+    "cik": "0000040545",
+    "marketCapRank": 31,
+    "marketCapDisplay": "299.24B"
+  },
+  {
+    "ticker": "GEHC",
+    "companyName": "GE HealthCare",
+    "sector": "Health Care",
+    "cik": "0001932393",
+    "marketCapRank": 284,
+    "marketCapDisplay": "32.26B"
+  },
+  {
+    "ticker": "GEV",
+    "companyName": "GE Vernova",
+    "sector": "Industrials",
+    "cik": "0001996810",
+    "marketCapRank": 42,
+    "marketCapDisplay": "239.81B"
+  },
+  {
+    "ticker": "GEN",
+    "companyName": "Gen Digital",
+    "sector": "Information Technology",
+    "cik": "0000849399",
+    "marketCapRank": 458,
+    "marketCapDisplay": "11.64B"
+  },
+  {
+    "ticker": "GNRC",
+    "companyName": "Generac",
+    "sector": "Industrials",
+    "cik": "0001474735",
+    "marketCapRank": 459,
+    "marketCapDisplay": "11.47B"
+  },
+  {
+    "ticker": "GD",
+    "companyName": "General Dynamics",
+    "sector": "Industrials",
+    "cik": "0000040533",
+    "marketCapRank": 120,
+    "marketCapDisplay": "94.40B"
+  },
+  {
+    "ticker": "GIS",
+    "companyName": "General Mills",
+    "sector": "Consumer Staples",
+    "cik": "0000040704",
+    "marketCapRank": 383,
+    "marketCapDisplay": "20.05B"
+  },
+  {
+    "ticker": "GM",
+    "companyName": "General Motors",
+    "sector": "Consumer Discretionary",
+    "cik": "0001467858",
+    "marketCapRank": 177,
+    "marketCapDisplay": "66.01B"
+  },
+  {
+    "ticker": "GPC",
+    "companyName": "Genuine Parts Company",
+    "sector": "Consumer Discretionary",
+    "cik": "0000040987",
+    "marketCapRank": 429,
+    "marketCapDisplay": "14.53B"
+  },
+  {
+    "ticker": "GILD",
+    "companyName": "Gilead Sciences",
+    "sector": "Health Care",
+    "cik": "0000882095",
+    "marketCapRank": 59,
+    "marketCapDisplay": "171.79B"
+  },
+  {
+    "ticker": "GPN",
+    "companyName": "Global Payments",
+    "sector": "Financials",
+    "cik": "0001123360",
+    "marketCapRank": 405,
+    "marketCapDisplay": "17.86B"
+  },
+  {
+    "ticker": "GL",
+    "companyName": "Globe Life",
+    "sector": "Financials",
+    "cik": "0000320335",
+    "marketCapRank": 461,
+    "marketCapDisplay": "11.25B"
+  },
+  {
+    "ticker": "GDDY",
+    "companyName": "GoDaddy",
+    "sector": "Information Technology",
+    "cik": "0001609711",
+    "marketCapRank": 464,
+    "marketCapDisplay": "11.04B"
+  },
+  {
+    "ticker": "GS",
+    "companyName": "Goldman Sachs",
+    "sector": "Financials",
+    "cik": "0000886982",
+    "marketCapRank": 38,
+    "marketCapDisplay": "262.71B"
+  },
+  {
+    "ticker": "HAL",
+    "companyName": "Halliburton",
+    "sector": "Energy",
+    "cik": "0000045012",
+    "marketCapRank": 286,
+    "marketCapDisplay": "32.04B"
+  },
+  {
+    "ticker": "HIG",
+    "companyName": "Hartford (The)",
+    "sector": "Financials",
+    "cik": "0000874766",
+    "marketCapRank": 258,
+    "marketCapDisplay": "37.59B"
+  },
+  {
+    "ticker": "HAS",
+    "companyName": "Hasbro",
+    "sector": "Consumer Discretionary",
+    "cik": "0000046080",
+    "marketCapRank": 446,
+    "marketCapDisplay": "12.65B"
+  },
+  {
+    "ticker": "HCA",
+    "companyName": "HCA Healthcare",
+    "sector": "Health Care",
+    "cik": "0000860730",
+    "marketCapRank": 102,
+    "marketCapDisplay": "108.90B"
+  },
+  {
+    "ticker": "DOC",
+    "companyName": "Healthpeak Properties",
+    "sector": "Real Estate",
+    "cik": "0000765880",
+    "marketCapRank": 457,
+    "marketCapDisplay": "11.92B"
+  },
+  {
+    "ticker": "HSIC",
+    "companyName": "Henry Schein",
+    "sector": "Health Care",
+    "cik": "0001000228",
+    "marketCapRank": 484,
+    "marketCapDisplay": "8.59B"
+  },
+  {
+    "ticker": "HSY",
+    "companyName": "Hershey Company (The)",
+    "sector": "Consumer Staples",
+    "cik": "0000047111",
+    "marketCapRank": 240,
+    "marketCapDisplay": "42.15B"
+  },
+  {
+    "ticker": "HPE",
+    "companyName": "Hewlett Packard Enterprise",
+    "sector": "Information Technology",
+    "cik": "0001645590",
+    "marketCapRank": 281,
+    "marketCapDisplay": "32.48B"
+  },
+  {
+    "ticker": "HLT",
+    "companyName": "Hilton Worldwide",
+    "sector": "Consumer Discretionary",
+    "cik": "0001585689",
+    "marketCapRank": 164,
+    "marketCapDisplay": "70.19B"
+  },
+  {
+    "ticker": "HOLX",
+    "companyName": "Hologic",
+    "sector": "Health Care",
+    "cik": "0000859737",
+    "marketCapRank": 412,
+    "marketCapDisplay": "16.97B"
+  },
+  {
+    "ticker": "HD",
+    "companyName": "Home Depot (The)",
+    "sector": "Consumer Discretionary",
+    "cik": "0000354950",
+    "marketCapRank": 29,
+    "marketCapDisplay": "319.76B"
+  },
+  {
+    "ticker": "HON",
+    "companyName": "Honeywell",
+    "sector": "Industrials",
+    "cik": "0000773840",
+    "marketCapRank": 75,
+    "marketCapDisplay": "143.92B"
+  },
+  {
+    "ticker": "HRL",
+    "companyName": "Hormel Foods",
+    "sector": "Consumer Staples",
+    "cik": "0000048465",
+    "marketCapRank": 456,
+    "marketCapDisplay": "12.02B"
+  },
+  {
+    "ticker": "HST",
+    "companyName": "Host Hotels & Resorts",
+    "sector": "Real Estate",
+    "cik": "0001070750",
+    "marketCapRank": 439,
+    "marketCapDisplay": "13.38B"
+  },
+  {
+    "ticker": "HWM",
+    "companyName": "Howmet Aerospace",
+    "sector": "Industrials",
+    "cik": "0000004281",
+    "marketCapRank": 122,
+    "marketCapDisplay": "93.42B"
+  },
+  {
+    "ticker": "HPQ",
+    "companyName": "HP Inc.",
+    "sector": "Information Technology",
+    "cik": "0000047217",
+    "marketCapRank": 410,
+    "marketCapDisplay": "17.19B"
+  },
+  {
+    "ticker": "HUBB",
+    "companyName": "Hubbell Incorporated",
+    "sector": "Industrials",
+    "cik": "0000048898",
+    "marketCapRank": 327,
+    "marketCapDisplay": "26.47B"
+  },
+  {
+    "ticker": "HUM",
+    "companyName": "Humana",
+    "sector": "Health Care",
+    "cik": "0000049071",
+    "marketCapRank": 347,
+    "marketCapDisplay": "24.28B"
+  },
+  {
+    "ticker": "HBAN",
+    "companyName": "Huntington Bancshares",
+    "sector": "Financials",
+    "cik": "0000049196",
+    "marketCapRank": 283,
+    "marketCapDisplay": "32.41B"
+  },
+  {
+    "ticker": "HII",
+    "companyName": "Huntington Ingalls Industries",
+    "sector": "Industrials",
+    "cik": "0001501585",
+    "marketCapRank": 415,
+    "marketCapDisplay": "16.00B"
+  },
+  {
+    "ticker": "IBM",
+    "companyName": "IBM",
+    "sector": "Information Technology",
+    "cik": "0000051143",
+    "marketCapRank": 44,
+    "marketCapDisplay": "229.72B"
+  },
+  {
+    "ticker": "IEX",
+    "companyName": "IDEX Corporation",
+    "sector": "Industrials",
+    "cik": "0000832101",
+    "marketCapRank": 433,
+    "marketCapDisplay": "14.18B"
+  },
+  {
+    "ticker": "IDXX",
+    "companyName": "Idexx Laboratories",
+    "sector": "Health Care",
+    "cik": "0000874716",
+    "marketCapRank": 227,
+    "marketCapDisplay": "45.98B"
+  },
+  {
+    "ticker": "ITW",
+    "companyName": "Illinois Tool Works",
+    "sector": "Industrials",
+    "cik": "0000049826",
+    "marketCapRank": 152,
+    "marketCapDisplay": "74.46B"
+  },
+  {
+    "ticker": "INCY",
+    "companyName": "Incyte",
+    "sector": "Health Care",
+    "cik": "0000879169",
+    "marketCapRank": 393,
+    "marketCapDisplay": "18.88B"
+  },
+  {
+    "ticker": "IR",
+    "companyName": "Ingersoll Rand",
+    "sector": "Industrials",
+    "cik": "0001699150",
+    "marketCapRank": 296,
+    "marketCapDisplay": "30.82B"
+  },
+  {
+    "ticker": "PODD",
+    "companyName": "Insulet Corporation",
+    "sector": "Health Care",
+    "cik": "0001145197",
+    "marketCapRank": 434,
+    "marketCapDisplay": "14.04B"
+  },
+  {
+    "ticker": "INTC",
+    "companyName": "Intel",
+    "sector": "Information Technology",
+    "cik": "0000050863",
+    "marketCapRank": 39,
+    "marketCapDisplay": "258.83B"
+  },
+  {
+    "ticker": "IBKR",
+    "companyName": "Interactive Brokers",
+    "sector": "Financials",
+    "cik": "0001381197",
+    "marketCapRank": 300,
+    "marketCapDisplay": "30.30B"
+  },
+  {
+    "ticker": "ICE",
+    "companyName": "Intercontinental Exchange",
+    "sector": "Financials",
+    "cik": "0001571949",
+    "marketCapRank": 121,
+    "marketCapDisplay": "94.25B"
+  },
+  {
+    "ticker": "IFF",
+    "companyName": "International Flavors & Fragrances",
+    "sector": "Materials",
+    "cik": "0000051253",
+    "marketCapRank": 401,
+    "marketCapDisplay": "18.36B"
+  },
+  {
+    "ticker": "IP",
+    "companyName": "International Paper",
+    "sector": "Materials",
+    "cik": "0000051434",
+    "marketCapRank": 399,
+    "marketCapDisplay": "18.37B"
+  },
+  {
+    "ticker": "INTU",
+    "companyName": "Intuit",
+    "sector": "Information Technology",
+    "cik": "0000896878",
+    "marketCapRank": 94,
+    "marketCapDisplay": "114.41B"
+  },
+  {
+    "ticker": "ISRG",
+    "companyName": "Intuitive Surgical",
+    "sector": "Health Care",
+    "cik": "0001035267",
+    "marketCapRank": 66,
+    "marketCapDisplay": "159.83B"
+  },
+  {
+    "ticker": "IVZ",
+    "companyName": "Invesco",
+    "sector": "Financials",
+    "cik": "0000914208",
+    "marketCapRank": 476,
+    "marketCapDisplay": "9.89B"
+  },
+  {
+    "ticker": "INVH",
+    "companyName": "Invitation Homes",
+    "sector": "Real Estate",
+    "cik": "0001687229",
+    "marketCapRank": 423,
+    "marketCapDisplay": "15.32B"
+  },
+  {
+    "ticker": "IQV",
+    "companyName": "IQVIA",
+    "sector": "Health Care",
+    "cik": "0001478242",
+    "marketCapRank": 313,
+    "marketCapDisplay": "28.66B"
+  },
+  {
+    "ticker": "IRM",
+    "companyName": "Iron Mountain",
+    "sector": "Real Estate",
+    "cik": "0001020569",
+    "marketCapRank": 293,
+    "marketCapDisplay": "31.04B"
+  },
+  {
+    "ticker": "JBHT",
+    "companyName": "J.B. Hunt",
+    "sector": "Industrials",
+    "cik": "0000728535",
+    "marketCapRank": 380,
+    "marketCapDisplay": "20.45B"
+  },
+  {
+    "ticker": "JBL",
+    "companyName": "Jabil",
+    "sector": "Information Technology",
+    "cik": "0000898293",
+    "marketCapRank": 320,
+    "marketCapDisplay": "27.77B"
+  },
+  {
+    "ticker": "JKHY",
+    "companyName": "Jack Henry & Associates",
+    "sector": "Financials",
+    "cik": "0000779152",
+    "marketCapRank": 460,
+    "marketCapDisplay": "11.41B"
+  },
+  {
+    "ticker": "J",
+    "companyName": "Jacobs Solutions",
+    "sector": "Industrials",
+    "cik": "0000052988",
+    "marketCapRank": 426,
+    "marketCapDisplay": "15.04B"
+  },
+  {
+    "ticker": "JNJ",
+    "companyName": "Johnson & Johnson",
+    "sector": "Health Care",
+    "cik": "0000200406",
+    "marketCapRank": 15,
+    "marketCapDisplay": "575.30B"
+  },
+  {
+    "ticker": "JCI",
+    "companyName": "Johnson Controls",
+    "sector": "Industrials",
+    "cik": "0000833444",
+    "marketCapRank": 136,
+    "marketCapDisplay": "81.44B"
+  },
+  {
+    "ticker": "JPM",
+    "companyName": "JPMorgan Chase",
+    "sector": "Financials",
+    "cik": "0000019617",
+    "marketCapRank": 12,
+    "marketCapDisplay": "793.22B"
+  },
+  {
+    "ticker": "KVUE",
+    "companyName": "Kenvue",
+    "sector": "Consumer Staples",
+    "cik": "0001944048",
+    "marketCapRank": 277,
+    "marketCapDisplay": "33.05B"
+  },
+  {
+    "ticker": "KDP",
+    "companyName": "Keurig Dr Pepper",
+    "sector": "Consumer Staples",
+    "cik": "0001418135",
+    "marketCapRank": 271,
+    "marketCapDisplay": "34.94B"
+  },
+  {
+    "ticker": "KEY",
+    "companyName": "KeyCorp",
+    "sector": "Financials",
+    "cik": "0000091576",
+    "marketCapRank": 365,
+    "marketCapDisplay": "22.16B"
+  },
+  {
+    "ticker": "KEYS",
+    "companyName": "Keysight Technologies",
+    "sector": "Information Technology",
+    "cik": "0001601046",
+    "marketCapRank": 212,
+    "marketCapDisplay": "50.08B"
+  },
+  {
+    "ticker": "KMB",
+    "companyName": "Kimberly-Clark",
+    "sector": "Consumer Staples",
+    "cik": "0000055785",
+    "marketCapRank": 287,
+    "marketCapDisplay": "32.01B"
+  },
+  {
+    "ticker": "KIM",
+    "companyName": "Kimco Realty",
+    "sector": "Real Estate",
+    "cik": "0000879101",
+    "marketCapRank": 424,
+    "marketCapDisplay": "15.17B"
+  },
+  {
+    "ticker": "KMI",
+    "companyName": "Kinder Morgan",
+    "sector": "Energy",
+    "cik": "0001506307",
+    "marketCapRank": 153,
+    "marketCapDisplay": "74.25B"
+  },
+  {
+    "ticker": "KKR",
+    "companyName": "KKR & Co.",
+    "sector": "Financials",
+    "cik": "0001404912",
+    "marketCapRank": 137,
+    "marketCapDisplay": "81.18B"
+  },
+  {
+    "ticker": "KLAC",
+    "companyName": "KLA Corporation",
+    "sector": "Information Technology",
+    "cik": "0000319201",
+    "marketCapRank": 51,
+    "marketCapDisplay": "198.90B"
+  },
+  {
+    "ticker": "KHC",
+    "companyName": "Kraft Heinz",
+    "sector": "Consumer Staples",
+    "cik": "0001637459",
+    "marketCapRank": 317,
+    "marketCapDisplay": "27.82B"
+  },
+  {
+    "ticker": "KR",
+    "companyName": "Kroger",
+    "sector": "Consumer Staples",
+    "cik": "0000056873",
+    "marketCapRank": 231,
+    "marketCapDisplay": "44.66B"
+  },
+  {
+    "ticker": "LHX",
+    "companyName": "L3Harris",
+    "sector": "Industrials",
+    "cik": "0000202058",
+    "marketCapRank": 176,
+    "marketCapDisplay": "66.50B"
+  },
+  {
+    "ticker": "LH",
+    "companyName": "Labcorp",
+    "sector": "Health Care",
+    "cik": "0000920148",
+    "marketCapRank": 357,
+    "marketCapDisplay": "22.79B"
+  },
+  {
+    "ticker": "LRCX",
+    "companyName": "Lam Research",
+    "sector": "Information Technology",
+    "cik": "0000707549",
+    "marketCapRank": 35,
+    "marketCapDisplay": "272.22B"
+  },
+  {
+    "ticker": "LVS",
+    "companyName": "Las Vegas Sands",
+    "sector": "Consumer Discretionary",
+    "cik": "0001300514",
+    "marketCapRank": 264,
+    "marketCapDisplay": "36.17B"
+  },
+  {
+    "ticker": "LDOS",
+    "companyName": "Leidos",
+    "sector": "Industrials",
+    "cik": "0001336920",
+    "marketCapRank": 382,
+    "marketCapDisplay": "20.11B"
+  },
+  {
+    "ticker": "LEN",
+    "companyName": "Lennar",
+    "sector": "Consumer Discretionary",
+    "cik": "0000920760",
+    "marketCapRank": 374,
+    "marketCapDisplay": "21.53B"
+  },
+  {
+    "ticker": "LII",
+    "companyName": "Lennox International",
+    "sector": "Industrials",
+    "cik": "0001069202",
+    "marketCapRank": 419,
+    "marketCapDisplay": "15.79B"
+  },
+  {
+    "ticker": "LLY",
+    "companyName": "Lilly (Eli)",
+    "sector": "Health Care",
+    "cik": "0000059478",
+    "marketCapRank": 11,
+    "marketCapDisplay": "816.50B"
+  },
+  {
+    "ticker": "LIN",
+    "companyName": "Linde plc",
+    "sector": "Materials",
+    "cik": "0001707925",
+    "marketCapRank": 43,
+    "marketCapDisplay": "230.93B"
+  },
+  {
+    "ticker": "LYV",
+    "companyName": "Live Nation Entertainment",
+    "sector": "Communication Services",
+    "cik": "0001335258",
+    "marketCapRank": 260,
+    "marketCapDisplay": "36.98B"
+  },
+  {
+    "ticker": "LMT",
+    "companyName": "Lockheed Martin",
+    "sector": "Industrials",
+    "cik": "0000936468",
+    "marketCapRank": 74,
+    "marketCapDisplay": "145.74B"
+  },
+  {
+    "ticker": "L",
+    "companyName": "Loews Corporation",
+    "sector": "Financials",
+    "cik": "0000060086",
+    "marketCapRank": 364,
+    "marketCapDisplay": "22.18B"
+  },
+  {
+    "ticker": "LOW",
+    "companyName": "Lowe's",
+    "sector": "Consumer Discretionary",
+    "cik": "0000060667",
+    "marketCapRank": 84,
+    "marketCapDisplay": "130.21B"
+  },
+  {
+    "ticker": "LULU",
+    "companyName": "Lululemon Athletica",
+    "sector": "Consumer Discretionary",
+    "cik": "0001397187",
+    "marketCapRank": 404,
+    "marketCapDisplay": "17.88B"
+  },
+  {
+    "ticker": "LITE",
+    "companyName": "Lumentum",
+    "sector": "Information Technology",
+    "cik": "0001633978",
+    "marketCapRank": 499
+  },
+  {
+    "ticker": "LYB",
+    "companyName": "LyondellBasell",
+    "sector": "Materials",
+    "cik": "0001489393",
+    "marketCapRank": 333,
+    "marketCapDisplay": "25.67B"
+  },
+  {
+    "ticker": "MTB",
+    "companyName": "M&T Bank",
+    "sector": "Financials",
+    "cik": "0000036270",
+    "marketCapRank": 288,
+    "marketCapDisplay": "31.49B"
+  },
+  {
+    "ticker": "MPC",
+    "companyName": "Marathon Petroleum",
+    "sector": "Energy",
+    "cik": "0001510295",
+    "marketCapRank": 161,
+    "marketCapDisplay": "71.59B"
+  },
+  {
+    "ticker": "MAR",
+    "companyName": "Marriott International",
+    "sector": "Consumer Discretionary",
+    "cik": "0001048286",
+    "marketCapRank": 124,
+    "marketCapDisplay": "89.04B"
+  },
+  {
+    "ticker": "MRSH",
+    "companyName": "Marsh McLennan",
+    "sector": "Financials",
+    "cik": "0000062709",
+    "marketCapRank": 130,
+    "marketCapDisplay": "84.69B"
+  },
+  {
+    "ticker": "MLM",
+    "companyName": "Martin Marietta Materials",
+    "sector": "Materials",
+    "cik": "0000916076",
+    "marketCapRank": 265,
+    "marketCapDisplay": "36.10B"
+  },
+  {
+    "ticker": "MAS",
+    "companyName": "Masco",
+    "sector": "Industrials",
+    "cik": "0000062996",
+    "marketCapRank": 454,
+    "marketCapDisplay": "12.06B"
+  },
+  {
+    "ticker": "MA",
+    "companyName": "Mastercard",
+    "sector": "Financials",
+    "cik": "0001141391",
+    "marketCapRank": 17,
+    "marketCapDisplay": "446.68B"
+  },
+  {
+    "ticker": "MKC",
+    "companyName": "McCormick & Company",
+    "sector": "Consumer Staples",
+    "cik": "0000063754",
+    "marketCapRank": 437,
+    "marketCapDisplay": "13.65B"
+  },
+  {
+    "ticker": "MCD",
+    "companyName": "McDonald's",
+    "sector": "Consumer Discretionary",
+    "cik": "0000063908",
+    "marketCapRank": 45,
+    "marketCapDisplay": "219.35B"
+  },
+  {
+    "ticker": "MCK",
+    "companyName": "McKesson Corporation",
+    "sector": "Health Care",
+    "cik": "0000927653",
+    "marketCapRank": 107,
+    "marketCapDisplay": "105.34B"
+  },
+  {
+    "ticker": "MDT",
+    "companyName": "Medtronic",
+    "sector": "Health Care",
+    "cik": "0001613103",
+    "marketCapRank": 100,
+    "marketCapDisplay": "110.70B"
+  },
+  {
+    "ticker": "MRK",
+    "companyName": "Merck & Co.",
+    "sector": "Health Care",
+    "cik": "0000310158",
+    "marketCapRank": 32,
+    "marketCapDisplay": "293.70B"
+  },
+  {
+    "ticker": "META",
+    "companyName": "Meta Platforms",
+    "sector": "Communication Services",
+    "cik": "0001326801",
+    "marketCapRank": 7,
+    "marketCapDisplay": "1.44T"
+  },
+  {
+    "ticker": "MET",
+    "companyName": "MetLife",
+    "sector": "Financials",
+    "cik": "0001099219",
+    "marketCapRank": 229,
+    "marketCapDisplay": "45.66B"
+  },
+  {
+    "ticker": "MTD",
+    "companyName": "Mettler Toledo",
+    "sector": "Health Care",
+    "cik": "0001037646",
+    "marketCapRank": 332,
+    "marketCapDisplay": "25.70B"
+  },
+  {
+    "ticker": "MGM",
+    "companyName": "MGM Resorts",
+    "sector": "Consumer Discretionary",
+    "cik": "0000789570",
+    "marketCapRank": 478,
+    "marketCapDisplay": "9.65B"
+  },
+  {
+    "ticker": "MCHP",
+    "companyName": "Microchip Technology",
+    "sector": "Information Technology",
+    "cik": "0000827054",
+    "marketCapRank": 266,
+    "marketCapDisplay": "36.07B"
+  },
+  {
+    "ticker": "MU",
+    "companyName": "Micron Technology",
+    "sector": "Information Technology",
+    "cik": "0000723125",
+    "marketCapRank": 18,
+    "marketCapDisplay": "423.29B"
+  },
+  {
+    "ticker": "MSFT",
+    "companyName": "Microsoft",
+    "sector": "Information Technology",
+    "cik": "0000789019",
+    "marketCapRank": 4,
+    "marketCapDisplay": "2.75T"
+  },
+  {
+    "ticker": "MAA",
+    "companyName": "Mid-America Apartment Communities",
+    "sector": "Real Estate",
+    "cik": "0000912595",
+    "marketCapRank": 427,
+    "marketCapDisplay": "14.96B"
+  },
+  {
+    "ticker": "MRNA",
+    "companyName": "Moderna",
+    "sector": "Health Care",
+    "cik": "0001682852",
+    "marketCapRank": 392,
+    "marketCapDisplay": "18.94B"
+  },
+  {
+    "ticker": "TAP",
+    "companyName": "Molson Coors Beverage Company",
+    "sector": "Consumer Staples",
+    "cik": "0000024545",
+    "marketCapRank": 489,
+    "marketCapDisplay": "8.35B"
+  },
+  {
+    "ticker": "MDLZ",
+    "companyName": "Mondelez International",
+    "sector": "Consumer Staples",
+    "cik": "0001103982",
+    "marketCapRank": 151,
+    "marketCapDisplay": "74.60B"
+  },
+  {
+    "ticker": "MPWR",
+    "companyName": "Monolithic Power Systems",
+    "sector": "Information Technology",
+    "cik": "0001280452",
+    "marketCapRank": 195,
+    "marketCapDisplay": "57.49B"
+  },
+  {
+    "ticker": "MNST",
+    "companyName": "Monster Beverage",
+    "sector": "Consumer Staples",
+    "cik": "0000865752",
+    "marketCapRank": 160,
+    "marketCapDisplay": "72.27B"
+  },
+  {
+    "ticker": "MCO",
+    "companyName": "Moody's Corporation",
+    "sector": "Financials",
+    "cik": "0001059556",
+    "marketCapRank": 138,
+    "marketCapDisplay": "79.05B"
+  },
+  {
+    "ticker": "MS",
+    "companyName": "Morgan Stanley",
+    "sector": "Financials",
+    "cik": "0000895421",
+    "marketCapRank": 37,
+    "marketCapDisplay": "263.72B"
+  },
+  {
+    "ticker": "MOS",
+    "companyName": "Mosaic Company (The)",
+    "sector": "Materials",
+    "cik": "0001285785",
+    "marketCapRank": 487,
+    "marketCapDisplay": "8.46B"
+  },
+  {
+    "ticker": "MSI",
+    "companyName": "Motorola Solutions",
+    "sector": "Information Technology",
+    "cik": "0000068505",
+    "marketCapRank": 156,
+    "marketCapDisplay": "73.36B"
+  },
+  {
+    "ticker": "MSCI",
+    "companyName": "MSCI Inc.",
+    "sector": "Financials",
+    "cik": "0001408198",
+    "marketCapRank": 248,
+    "marketCapDisplay": "40.25B"
+  },
+  {
+    "ticker": "NDAQ",
+    "companyName": "Nasdaq, Inc.",
+    "sector": "Financials",
+    "cik": "0001120193",
+    "marketCapRank": 219,
+    "marketCapDisplay": "49.65B"
+  },
+  {
+    "ticker": "NTAP",
+    "companyName": "NetApp",
+    "sector": "Information Technology",
+    "cik": "0001002047",
+    "marketCapRank": 385,
+    "marketCapDisplay": "19.73B"
+  },
+  {
+    "ticker": "NFLX",
+    "companyName": "Netflix",
+    "sector": "Communication Services",
+    "cik": "0001065280",
+    "marketCapRank": 19,
+    "marketCapDisplay": "418.84B"
+  },
+  {
+    "ticker": "NEM",
+    "companyName": "Newmont",
+    "sector": "Materials",
+    "cik": "0001164727",
+    "marketCapRank": 91,
+    "marketCapDisplay": "122.14B"
+  },
+  {
+    "ticker": "NWSA",
+    "companyName": "News Corp (Class A)",
+    "sector": "Communication Services",
+    "cik": "0001564708",
+    "marketCapRank": 438,
+    "marketCapDisplay": "13.45B"
+  },
+  {
+    "ticker": "NEE",
+    "companyName": "NextEra Energy",
+    "sector": "Utilities",
+    "cik": "0000753308",
+    "marketCapRank": 53,
+    "marketCapDisplay": "193.37B"
+  },
+  {
+    "ticker": "NKE",
+    "companyName": "Nike, Inc.",
+    "sector": "Consumer Discretionary",
+    "cik": "0000320187",
+    "marketCapRank": 179,
+    "marketCapDisplay": "64.86B"
+  },
+  {
+    "ticker": "NI",
+    "companyName": "NiSource",
+    "sector": "Utilities",
+    "cik": "0001111711",
+    "marketCapRank": 359,
+    "marketCapDisplay": "22.60B"
+  },
+  {
+    "ticker": "NDSN",
+    "companyName": "Nordson Corporation",
+    "sector": "Industrials",
+    "cik": "0000072331",
+    "marketCapRank": 428,
+    "marketCapDisplay": "14.68B"
+  },
+  {
+    "ticker": "NSC",
+    "companyName": "Norfolk Southern",
+    "sector": "Industrials",
+    "cik": "0000702165",
+    "marketCapRank": 180,
+    "marketCapDisplay": "64.67B"
+  },
+  {
+    "ticker": "NTRS",
+    "companyName": "Northern Trust",
+    "sector": "Financials",
+    "cik": "0000073124",
+    "marketCapRank": 326,
+    "marketCapDisplay": "26.52B"
+  },
+  {
+    "ticker": "NOC",
+    "companyName": "Northrop Grumman",
+    "sector": "Industrials",
+    "cik": "0001133421",
+    "marketCapRank": 117,
+    "marketCapDisplay": "97.71B"
+  },
+  {
+    "ticker": "NCLH",
+    "companyName": "Norwegian Cruise Line Holdings",
+    "sector": "Consumer Discretionary",
+    "cik": "0001513761",
+    "marketCapRank": 483,
+    "marketCapDisplay": "8.62B"
+  },
+  {
+    "ticker": "NRG",
+    "companyName": "NRG Energy",
+    "sector": "Utilities",
+    "cik": "0001013871",
+    "marketCapRank": 285,
+    "marketCapDisplay": "32.22B"
+  },
+  {
+    "ticker": "NUE",
+    "companyName": "Nucor",
+    "sector": "Materials",
+    "cik": "0000073309",
+    "marketCapRank": 252,
+    "marketCapDisplay": "38.95B"
+  },
+  {
+    "ticker": "NVDA",
+    "companyName": "Nvidia",
+    "sector": "Information Technology",
+    "cik": "0001045810",
+    "marketCapRank": 1,
+    "marketCapDisplay": "4.26T"
+  },
+  {
+    "ticker": "NVR",
+    "companyName": "NVR, Inc.",
+    "sector": "Consumer Discretionary",
+    "cik": "0000906163",
+    "marketCapRank": 397,
+    "marketCapDisplay": "18.49B"
+  },
+  {
+    "ticker": "NXPI",
+    "companyName": "NXP Semiconductors",
+    "sector": "Information Technology",
+    "cik": "0001413447",
+    "marketCapRank": 221,
+    "marketCapDisplay": "49.31B"
+  },
+  {
+    "ticker": "ORLY",
+    "companyName": "O\u2019Reilly Automotive",
+    "sector": "Consumer Discretionary",
+    "cik": "0000898173",
+    "marketCapRank": 141,
+    "marketCapDisplay": "77.09B"
+  },
+  {
+    "ticker": "OXY",
+    "companyName": "Occidental Petroleum",
+    "sector": "Energy",
+    "cik": "0000797468",
+    "marketCapRank": 184,
+    "marketCapDisplay": "62.74B"
+  },
+  {
+    "ticker": "ODFL",
+    "companyName": "Old Dominion",
+    "sector": "Industrials",
+    "cik": "0000878927",
+    "marketCapRank": 239,
+    "marketCapDisplay": "42.20B"
+  },
+  {
+    "ticker": "OMC",
+    "companyName": "Omnicom Group",
+    "sector": "Communication Services",
+    "cik": "0000029989",
+    "marketCapRank": 372,
+    "marketCapDisplay": "21.65B"
+  },
+  {
+    "ticker": "ON",
+    "companyName": "ON Semiconductor",
+    "sector": "Information Technology",
+    "cik": "0001097864",
+    "marketCapRank": 341,
+    "marketCapDisplay": "24.93B"
+  },
+  {
+    "ticker": "OKE",
+    "companyName": "Oneok",
+    "sector": "Energy",
+    "cik": "0001039684",
+    "marketCapRank": 200,
+    "marketCapDisplay": "56.06B"
+  },
+  {
+    "ticker": "ORCL",
+    "companyName": "Oracle Corporation",
+    "sector": "Information Technology",
+    "cik": "0001341439",
+    "marketCapRank": 20,
+    "marketCapDisplay": "414.78B"
+  },
+  {
+    "ticker": "OTIS",
+    "companyName": "Otis Worldwide",
+    "sector": "Industrials",
+    "cik": "0001781335",
+    "marketCapRank": 299,
+    "marketCapDisplay": "30.36B"
+  },
+  {
+    "ticker": "PCAR",
+    "companyName": "Paccar",
+    "sector": "Industrials",
+    "cik": "0000075362",
+    "marketCapRank": 186,
+    "marketCapDisplay": "62.27B"
+  },
+  {
+    "ticker": "PKG",
+    "companyName": "Packaging Corporation of America",
+    "sector": "Materials",
+    "cik": "0000075677",
+    "marketCapRank": 402,
+    "marketCapDisplay": "18.16B"
+  },
+  {
+    "ticker": "PLTR",
+    "companyName": "Palantir Technologies",
+    "sector": "Information Technology",
+    "cik": "0001321655",
+    "marketCapRank": 25,
+    "marketCapDisplay": "352.65B"
+  },
+  {
+    "ticker": "PANW",
+    "companyName": "Palo Alto Networks",
+    "sector": "Information Technology",
+    "cik": "0001327567",
+    "marketCapRank": 83,
+    "marketCapDisplay": "132.21B"
+  },
+  {
+    "ticker": "PSKY",
+    "companyName": "Paramount Skydance Corporation",
+    "sector": "Communication Services",
+    "cik": "0002041610",
+    "marketCapRank": 462,
+    "marketCapDisplay": "11.17B"
+  },
+  {
+    "ticker": "PH",
+    "companyName": "Parker Hannifin",
+    "sector": "Industrials",
+    "cik": "0000076334",
+    "marketCapRank": 93,
+    "marketCapDisplay": "114.66B"
+  },
+  {
+    "ticker": "PAYX",
+    "companyName": "Paychex",
+    "sector": "Industrials",
+    "cik": "0000723531",
+    "marketCapRank": 278,
+    "marketCapDisplay": "32.96B"
+  },
+  {
+    "ticker": "PYPL",
+    "companyName": "PayPal",
+    "sector": "Financials",
+    "cik": "0001633917",
+    "marketCapRank": 241,
+    "marketCapDisplay": "41.77B"
+  },
+  {
+    "ticker": "PNR",
+    "companyName": "Pentair",
+    "sector": "Industrials",
+    "cik": "0000077360",
+    "marketCapRank": 435,
+    "marketCapDisplay": "13.98B"
+  },
+  {
+    "ticker": "PEP",
+    "companyName": "PepsiCo",
+    "sector": "Consumer Staples",
+    "cik": "0000077476",
+    "marketCapRank": 47,
+    "marketCapDisplay": "213.60B"
+  },
+  {
+    "ticker": "PFE",
+    "companyName": "Pfizer",
+    "sector": "Health Care",
+    "cik": "0000078003",
+    "marketCapRank": 69,
+    "marketCapDisplay": "155.80B"
+  },
+  {
+    "ticker": "PCG",
+    "companyName": "PG&E Corporation",
+    "sector": "Utilities",
+    "cik": "0001004980",
+    "marketCapRank": 253,
+    "marketCapDisplay": "38.68B"
+  },
+  {
+    "ticker": "PM",
+    "companyName": "Philip Morris International",
+    "sector": "Consumer Staples",
+    "cik": "0001413329",
+    "marketCapRank": 41,
+    "marketCapDisplay": "249.47B"
+  },
+  {
+    "ticker": "PSX",
+    "companyName": "Phillips 66",
+    "sector": "Energy",
+    "cik": "0001534701",
+    "marketCapRank": 167,
+    "marketCapDisplay": "69.80B"
+  },
+  {
+    "ticker": "PNW",
+    "companyName": "Pinnacle West Capital",
+    "sector": "Utilities",
+    "cik": "0000764622",
+    "marketCapRank": 450,
+    "marketCapDisplay": "12.39B"
+  },
+  {
+    "ticker": "PNC",
+    "companyName": "PNC Financial Services",
+    "sector": "Financials",
+    "cik": "0000713676",
+    "marketCapRank": 127,
+    "marketCapDisplay": "85.97B"
+  },
+  {
+    "ticker": "POOL",
+    "companyName": "Pool Corporation",
+    "sector": "Consumer Discretionary",
+    "cik": "0000945841",
+    "marketCapRank": 493,
+    "marketCapDisplay": "7.49B"
+  },
+  {
+    "ticker": "PPG",
+    "companyName": "PPG Industries",
+    "sector": "Materials",
+    "cik": "0000079879",
+    "marketCapRank": 355,
+    "marketCapDisplay": "23.01B"
+  },
+  {
+    "ticker": "PPL",
+    "companyName": "PPL Corporation",
+    "sector": "Utilities",
+    "cik": "0000922224",
+    "marketCapRank": 309,
+    "marketCapDisplay": "29.13B"
+  },
+  {
+    "ticker": "PFG",
+    "companyName": "Principal Financial Group",
+    "sector": "Financials",
+    "cik": "0001126328",
+    "marketCapRank": 386,
+    "marketCapDisplay": "19.54B"
+  },
+  {
+    "ticker": "PG",
+    "companyName": "Procter & Gamble",
+    "sector": "Consumer Staples",
+    "cik": "0000080424",
+    "marketCapRank": 28,
+    "marketCapDisplay": "330.31B"
+  },
+  {
+    "ticker": "PGR",
+    "companyName": "Progressive Corporation",
+    "sector": "Financials",
+    "cik": "0000080661",
+    "marketCapRank": 95,
+    "marketCapDisplay": "114.07B"
+  },
+  {
+    "ticker": "PLD",
+    "companyName": "Prologis",
+    "sector": "Real Estate",
+    "cik": "0001045609",
+    "marketCapRank": 87,
+    "marketCapDisplay": "126.15B"
+  },
+  {
+    "ticker": "PRU",
+    "companyName": "Prudential Financial",
+    "sector": "Financials",
+    "cik": "0001137774",
+    "marketCapRank": 273,
+    "marketCapDisplay": "34.02B"
+  },
+  {
+    "ticker": "PEG",
+    "companyName": "Public Service Enterprise Group",
+    "sector": "Utilities",
+    "cik": "0000788784",
+    "marketCapRank": 246,
+    "marketCapDisplay": "40.42B"
+  },
+  {
+    "ticker": "PTC",
+    "companyName": "PTC Inc.",
+    "sector": "Information Technology",
+    "cik": "0000857005",
+    "marketCapRank": 411,
+    "marketCapDisplay": "17.18B"
+  },
+  {
+    "ticker": "PSA",
+    "companyName": "Public Storage",
+    "sector": "Real Estate",
+    "cik": "0001393311",
+    "marketCapRank": 220,
+    "marketCapDisplay": "49.44B"
+  },
+  {
+    "ticker": "PHM",
+    "companyName": "PulteGroup",
+    "sector": "Consumer Discretionary",
+    "cik": "0000822416",
+    "marketCapRank": 363,
+    "marketCapDisplay": "22.36B"
+  },
+  {
+    "ticker": "PWR",
+    "companyName": "Quanta Services",
+    "sector": "Industrials",
+    "cik": "0001050915",
+    "marketCapRank": 134,
+    "marketCapDisplay": "81.99B"
+  },
+  {
+    "ticker": "QCOM",
+    "companyName": "Qualcomm",
+    "sector": "Information Technology",
+    "cik": "0000804328",
+    "marketCapRank": 82,
+    "marketCapDisplay": "133.03B"
+  },
+  {
+    "ticker": "DGX",
+    "companyName": "Quest Diagnostics",
+    "sector": "Health Care",
+    "cik": "0001022079",
+    "marketCapRank": 368,
+    "marketCapDisplay": "21.86B"
+  },
+  {
+    "ticker": "Q",
+    "companyName": "Qnity Electronics",
+    "sector": "Information Technology",
+    "cik": "0002058873",
+    "marketCapRank": 346,
+    "marketCapDisplay": "24.32B"
+  },
+  {
+    "ticker": "RL",
+    "companyName": "Ralph Lauren Corporation",
+    "sector": "Consumer Discretionary",
+    "cik": "0001037038",
+    "marketCapRank": 371,
+    "marketCapDisplay": "21.71B"
+  },
+  {
+    "ticker": "RJF",
+    "companyName": "Raymond James Financial",
+    "sector": "Financials",
+    "cik": "0000720005",
+    "marketCapRank": 315,
+    "marketCapDisplay": "27.94B"
+  },
+  {
+    "ticker": "RTX",
+    "companyName": "RTX Corporation",
+    "sector": "Industrials",
+    "cik": "0000101829",
+    "marketCapRank": 36,
+    "marketCapDisplay": "264.48B"
+  },
+  {
+    "ticker": "O",
+    "companyName": "Realty Income",
+    "sector": "Real Estate",
+    "cik": "0000726728",
+    "marketCapRank": 194,
+    "marketCapDisplay": "57.87B"
+  },
+  {
+    "ticker": "REG",
+    "companyName": "Regency Centers",
+    "sector": "Real Estate",
+    "cik": "0000910606",
+    "marketCapRank": 432,
+    "marketCapDisplay": "14.29B"
+  },
+  {
+    "ticker": "REGN",
+    "companyName": "Regeneron Pharmaceuticals",
+    "sector": "Health Care",
+    "cik": "0000872589",
+    "marketCapRank": 139,
+    "marketCapDisplay": "78.30B"
+  },
+  {
+    "ticker": "RF",
+    "companyName": "Regions Financial Corporation",
+    "sector": "Financials",
+    "cik": "0001281761",
+    "marketCapRank": 356,
+    "marketCapDisplay": "22.80B"
+  },
+  {
+    "ticker": "RSG",
+    "companyName": "Republic Services",
+    "sector": "Industrials",
+    "cik": "0001060391",
+    "marketCapRank": 171,
+    "marketCapDisplay": "68.24B"
+  },
+  {
+    "ticker": "RMD",
+    "companyName": "ResMed",
+    "sector": "Health Care",
+    "cik": "0000943819",
+    "marketCapRank": 280,
+    "marketCapDisplay": "32.62B"
+  },
+  {
+    "ticker": "RVTY",
+    "companyName": "Revvity",
+    "sector": "Health Care",
+    "cik": "0000031791",
+    "marketCapRank": 477,
+    "marketCapDisplay": "9.87B"
+  },
+  {
+    "ticker": "HOOD",
+    "companyName": "Robinhood Markets",
+    "sector": "Financials",
+    "cik": "0001783879",
+    "marketCapRank": 187,
+    "marketCapDisplay": "61.79B"
+  },
+  {
+    "ticker": "ROK",
+    "companyName": "Rockwell Automation",
+    "sector": "Industrials",
+    "cik": "0001024478",
+    "marketCapRank": 243,
+    "marketCapDisplay": "41.09B"
+  },
+  {
+    "ticker": "ROL",
+    "companyName": "Rollins, Inc.",
+    "sector": "Industrials",
+    "cik": "0000084839",
+    "marketCapRank": 330,
+    "marketCapDisplay": "26.00B"
+  },
+  {
+    "ticker": "ROP",
+    "companyName": "Roper Technologies",
+    "sector": "Information Technology",
+    "cik": "0000882835",
+    "marketCapRank": 259,
+    "marketCapDisplay": "37.13B"
+  },
+  {
+    "ticker": "ROST",
+    "companyName": "Ross Stores",
+    "sector": "Consumer Discretionary",
+    "cik": "0000745732",
+    "marketCapRank": 163,
+    "marketCapDisplay": "70.92B"
+  },
+  {
+    "ticker": "RCL",
+    "companyName": "Royal Caribbean Group",
+    "sector": "Consumer Discretionary",
+    "cik": "0000884887",
+    "marketCapRank": 158,
+    "marketCapDisplay": "73.11B"
+  },
+  {
+    "ticker": "SPGI",
+    "companyName": "S&P Global",
+    "sector": "Financials",
+    "cik": "0000064040",
+    "marketCapRank": 85,
+    "marketCapDisplay": "128.94B"
+  },
+  {
+    "ticker": "CRM",
+    "companyName": "Salesforce",
+    "sector": "Information Technology",
+    "cik": "0001108524",
+    "marketCapRank": 60,
+    "marketCapDisplay": "171.22B"
+  },
+  {
+    "ticker": "SNDK",
+    "companyName": "Sandisk",
+    "sector": "Information Technology",
+    "cik": "0002023554",
+    "marketCapRank": 106,
+    "marketCapDisplay": "107.10B"
+  },
+  {
+    "ticker": "SBAC",
+    "companyName": "SBA Communications",
+    "sector": "Real Estate",
+    "cik": "0001034054",
+    "marketCapRank": 362,
+    "marketCapDisplay": "22.47B"
+  },
+  {
+    "ticker": "SLB",
+    "companyName": "Schlumberger",
+    "sector": "Energy",
+    "cik": "0000087347",
+    "marketCapRank": 148,
+    "marketCapDisplay": "75.27B"
+  },
+  {
+    "ticker": "STX",
+    "companyName": "Seagate Technology",
+    "sector": "Information Technology",
+    "cik": "0001137789",
+    "marketCapRank": 111,
+    "marketCapDisplay": "101.52B"
+  },
+  {
+    "ticker": "SRE",
+    "companyName": "Sempra",
+    "sector": "Utilities",
+    "cik": "0001032208",
+    "marketCapRank": 182,
+    "marketCapDisplay": "63.76B"
+  },
+  {
+    "ticker": "NOW",
+    "companyName": "ServiceNow",
+    "sector": "Information Technology",
+    "cik": "0001373715",
+    "marketCapRank": 104,
+    "marketCapDisplay": "108.47B"
+  },
+  {
+    "ticker": "SHW",
+    "companyName": "Sherwin-Williams",
+    "sector": "Materials",
+    "cik": "0000089800",
+    "marketCapRank": 140,
+    "marketCapDisplay": "77.81B"
+  },
+  {
+    "ticker": "SPG",
+    "companyName": "Simon Property Group",
+    "sector": "Real Estate",
+    "cik": "0001063761",
+    "marketCapRank": 159,
+    "marketCapDisplay": "72.39B"
+  },
+  {
+    "ticker": "SWKS",
+    "companyName": "Skyworks Solutions",
+    "sector": "Information Technology",
+    "cik": "0000004127",
+    "marketCapRank": 488,
+    "marketCapDisplay": "8.36B"
+  },
+  {
+    "ticker": "SJM",
+    "companyName": "J.M. Smucker Company (The)",
+    "sector": "Consumer Staples",
+    "cik": "0000091419",
+    "marketCapRank": 473,
+    "marketCapDisplay": "10.21B"
+  },
+  {
+    "ticker": "SW",
+    "companyName": "Smurfit Westrock",
+    "sector": "Materials",
+    "cik": "0002005951",
+    "marketCapRank": 376,
+    "marketCapDisplay": "20.75B"
+  },
+  {
+    "ticker": "SNA",
+    "companyName": "Snap-on",
+    "sector": "Industrials",
+    "cik": "0000091440",
+    "marketCapRank": 389,
+    "marketCapDisplay": "19.08B"
+  },
+  {
+    "ticker": "SOLV",
+    "companyName": "Solventum",
+    "sector": "Health Care",
+    "cik": "0001964738",
+    "marketCapRank": 465,
+    "marketCapDisplay": "10.97B"
+  },
+  {
+    "ticker": "SO",
+    "companyName": "Southern Company",
+    "sector": "Utilities",
+    "cik": "0000092122",
+    "marketCapRank": 103,
+    "marketCapDisplay": "108.51B"
+  },
+  {
+    "ticker": "LUV",
+    "companyName": "Southwest Airlines",
+    "sector": "Industrials",
+    "cik": "0000092380",
+    "marketCapRank": 396,
+    "marketCapDisplay": "18.51B"
+  },
+  {
+    "ticker": "SWK",
+    "companyName": "Stanley Black & Decker",
+    "sector": "Industrials",
+    "cik": "0000093556",
+    "marketCapRank": 471,
+    "marketCapDisplay": "10.48B"
+  },
+  {
+    "ticker": "SBUX",
+    "companyName": "Starbucks",
+    "sector": "Consumer Discretionary",
+    "cik": "0000829224",
+    "marketCapRank": 105,
+    "marketCapDisplay": "107.83B"
+  },
+  {
+    "ticker": "STT",
+    "companyName": "State Street Corporation",
+    "sector": "Financials",
+    "cik": "0000093751",
+    "marketCapRank": 263,
+    "marketCapDisplay": "36.28B"
+  },
+  {
+    "ticker": "STLD",
+    "companyName": "Steel Dynamics",
+    "sector": "Materials",
+    "cik": "0001022671",
+    "marketCapRank": 334,
+    "marketCapDisplay": "25.55B"
+  },
+  {
+    "ticker": "STE",
+    "companyName": "Steris",
+    "sector": "Health Care",
+    "cik": "0001757898",
+    "marketCapRank": 375,
+    "marketCapDisplay": "21.28B"
+  },
+  {
+    "ticker": "SYK",
+    "companyName": "Stryker Corporation",
+    "sector": "Health Care",
+    "cik": "0000310764",
+    "marketCapRank": 88,
+    "marketCapDisplay": "125.90B"
+  },
+  {
+    "ticker": "SMCI",
+    "companyName": "Supermicro",
+    "sector": "Information Technology",
+    "cik": "0001375365",
+    "marketCapRank": 443,
+    "marketCapDisplay": "13.19B"
+  },
+  {
+    "ticker": "SYF",
+    "companyName": "Synchrony Financial",
+    "sector": "Financials",
+    "cik": "0001601712",
+    "marketCapRank": 350,
+    "marketCapDisplay": "23.92B"
+  },
+  {
+    "ticker": "SNPS",
+    "companyName": "Synopsys",
+    "sector": "Information Technology",
+    "cik": "0000883241",
+    "marketCapRank": 147,
+    "marketCapDisplay": "75.31B"
+  },
+  {
+    "ticker": "SYY",
+    "companyName": "Sysco",
+    "sector": "Consumer Staples",
+    "cik": "0000096021",
+    "marketCapRank": 270,
+    "marketCapDisplay": "34.95B"
+  },
+  {
+    "ticker": "TMUS",
+    "companyName": "T-Mobile US",
+    "sector": "Communication Services",
+    "cik": "0001283699",
+    "marketCapRank": 46,
+    "marketCapDisplay": "219.03B"
+  },
+  {
+    "ticker": "TROW",
+    "companyName": "T. Rowe Price",
+    "sector": "Financials",
+    "cik": "0001113169",
+    "marketCapRank": 387,
+    "marketCapDisplay": "19.37B"
+  },
+  {
+    "ticker": "TTWO",
+    "companyName": "Take-Two Interactive",
+    "sector": "Communication Services",
+    "cik": "0000946581",
+    "marketCapRank": 261,
+    "marketCapDisplay": "36.57B"
+  },
+  {
+    "ticker": "TPR",
+    "companyName": "Tapestry, Inc.",
+    "sector": "Consumer Discretionary",
+    "cik": "0001116132",
+    "marketCapRank": 312,
+    "marketCapDisplay": "28.67B"
+  },
+  {
+    "ticker": "TRGP",
+    "companyName": "Targa Resources",
+    "sector": "Energy",
+    "cik": "0001389170",
+    "marketCapRank": 206,
+    "marketCapDisplay": "52.77B"
+  },
+  {
+    "ticker": "TGT",
+    "companyName": "Target Corporation",
+    "sector": "Consumer Staples",
+    "cik": "0000027419",
+    "marketCapRank": 201,
+    "marketCapDisplay": "55.64B"
+  },
+  {
+    "ticker": "TEL",
+    "companyName": "TE Connectivity",
+    "sector": "Information Technology",
+    "cik": "0001385157",
+    "marketCapRank": 189,
+    "marketCapDisplay": "61.18B"
+  },
+  {
+    "ticker": "TDY",
+    "companyName": "Teledyne Technologies",
+    "sector": "Information Technology",
+    "cik": "0001094285",
+    "marketCapRank": 310,
+    "marketCapDisplay": "29.09B"
+  },
+  {
+    "ticker": "TER",
+    "companyName": "Teradyne",
+    "sector": "Information Technology",
+    "cik": "0000097210",
+    "marketCapRank": 222,
+    "marketCapDisplay": "49.08B"
+  },
+  {
+    "ticker": "TSLA",
+    "companyName": "Tesla, Inc.",
+    "sector": "Consumer Discretionary",
+    "cik": "0001318605",
+    "marketCapRank": 8,
+    "marketCapDisplay": "1.30T"
+  },
+  {
+    "ticker": "TXN",
+    "companyName": "Texas Instruments",
+    "sector": "Information Technology",
+    "cik": "0000097476",
+    "marketCapRank": 55,
+    "marketCapDisplay": "180.35B"
+  },
+  {
+    "ticker": "TPL",
+    "companyName": "Texas Pacific Land Corporation",
+    "sector": "Energy",
+    "cik": "0001811074",
+    "marketCapRank": 297,
+    "marketCapDisplay": "30.82B"
+  },
+  {
+    "ticker": "TXT",
+    "companyName": "Textron",
+    "sector": "Industrials",
+    "cik": "0000217346",
+    "marketCapRank": 421,
+    "marketCapDisplay": "15.40B"
+  },
+  {
+    "ticker": "TMO",
+    "companyName": "Thermo Fisher Scientific",
+    "sector": "Health Care",
+    "cik": "0000097745",
+    "marketCapRank": 56,
+    "marketCapDisplay": "180.19B"
+  },
+  {
+    "ticker": "TJX",
+    "companyName": "TJX Companies",
+    "sector": "Consumer Discretionary",
+    "cik": "0000109198",
+    "marketCapRank": 57,
+    "marketCapDisplay": "177.64B"
+  },
+  {
+    "ticker": "TKO",
+    "companyName": "TKO Group Holdings",
+    "sector": "Communication Services",
+    "cik": "0001973266",
+    "marketCapRank": 254,
+    "marketCapDisplay": "38.25B"
+  },
+  {
+    "ticker": "TTD",
+    "companyName": "Trade Desk (The)",
+    "sector": "Communication Services",
+    "cik": "0001671933",
+    "marketCapRank": 470,
+    "marketCapDisplay": "10.62B"
+  },
+  {
+    "ticker": "TSCO",
+    "companyName": "Tractor Supply",
+    "sector": "Consumer Discretionary",
+    "cik": "0000916365",
+    "marketCapRank": 352,
+    "marketCapDisplay": "23.47B"
+  },
+  {
+    "ticker": "TT",
+    "companyName": "Trane Technologies",
+    "sector": "Industrials",
+    "cik": "0001466258",
+    "marketCapRank": 118,
+    "marketCapDisplay": "95.11B"
+  },
+  {
+    "ticker": "TDG",
+    "companyName": "TransDigm Group",
+    "sector": "Industrials",
+    "cik": "0001260221",
+    "marketCapRank": 174,
+    "marketCapDisplay": "67.18B"
+  },
+  {
+    "ticker": "TRV",
+    "companyName": "Travelers Companies (The)",
+    "sector": "Financials",
+    "cik": "0000086312",
+    "marketCapRank": 181,
+    "marketCapDisplay": "63.87B"
+  },
+  {
+    "ticker": "TRMB",
+    "companyName": "Trimble Inc.",
+    "sector": "Information Technology",
+    "cik": "0000864749",
+    "marketCapRank": 425,
+    "marketCapDisplay": "15.14B"
+  },
+  {
+    "ticker": "TFC",
+    "companyName": "Truist Financial",
+    "sector": "Financials",
+    "cik": "0000092230",
+    "marketCapRank": 193,
+    "marketCapDisplay": "59.18B"
+  },
+  {
+    "ticker": "TYL",
+    "companyName": "Tyler Technologies",
+    "sector": "Information Technology",
+    "cik": "0000860731",
+    "marketCapRank": 430,
+    "marketCapDisplay": "14.49B"
+  },
+  {
+    "ticker": "TSN",
+    "companyName": "Tyson Foods",
+    "sector": "Consumer Staples",
+    "cik": "0000100493",
+    "marketCapRank": 358,
+    "marketCapDisplay": "22.61B"
+  },
+  {
+    "ticker": "USB",
+    "companyName": "U.S. Bancorp",
+    "sector": "Financials",
+    "cik": "0000036104",
+    "marketCapRank": 131,
+    "marketCapDisplay": "82.89B"
+  },
+  {
+    "ticker": "UBER",
+    "companyName": "Uber",
+    "sector": "Industrials",
+    "cik": "0001543151",
+    "marketCapRank": 72,
+    "marketCapDisplay": "147.46B"
+  },
+  {
+    "ticker": "UDR",
+    "companyName": "UDR, Inc.",
+    "sector": "Real Estate",
+    "cik": "0000074208",
+    "marketCapRank": 449,
+    "marketCapDisplay": "12.43B"
+  },
+  {
+    "ticker": "ULTA",
+    "companyName": "Ulta Beauty",
+    "sector": "Consumer Discretionary",
+    "cik": "0001403568",
+    "marketCapRank": 351,
+    "marketCapDisplay": "23.58B"
+  },
+  {
+    "ticker": "UNP",
+    "companyName": "Union Pacific Corporation",
+    "sector": "Industrials",
+    "cik": "0000100885",
+    "marketCapRank": 73,
+    "marketCapDisplay": "145.80B"
+  },
+  {
+    "ticker": "UAL",
+    "companyName": "United Airlines Holdings",
+    "sector": "Industrials",
+    "cik": "0000100517",
+    "marketCapRank": 311,
+    "marketCapDisplay": "28.77B"
+  },
+  {
+    "ticker": "UPS",
+    "companyName": "United Parcel Service",
+    "sector": "Industrials",
+    "cik": "0001090727",
+    "marketCapRank": 132,
+    "marketCapDisplay": "82.38B"
+  },
+  {
+    "ticker": "URI",
+    "companyName": "United Rentals",
+    "sector": "Industrials",
+    "cik": "0001067701",
+    "marketCapRank": 228,
+    "marketCapDisplay": "45.93B"
+  },
+  {
+    "ticker": "UNH",
+    "companyName": "UnitedHealth Group",
+    "sector": "Health Care",
+    "cik": "0000731766",
+    "marketCapRank": 33,
+    "marketCapDisplay": "279.12B"
+  },
+  {
+    "ticker": "UHS",
+    "companyName": "Universal Health Services",
+    "sector": "Health Care",
+    "cik": "0000352915",
+    "marketCapRank": 463,
+    "marketCapDisplay": "11.08B"
+  },
+  {
+    "ticker": "VLO",
+    "companyName": "Valero Energy",
+    "sector": "Energy",
+    "cik": "0001035002",
+    "marketCapRank": 155,
+    "marketCapDisplay": "73.50B"
+  },
+  {
+    "ticker": "VTR",
+    "companyName": "Ventas",
+    "sector": "Real Estate",
+    "cik": "0000740260",
+    "marketCapRank": 249,
+    "marketCapDisplay": "39.72B"
+  },
+  {
+    "ticker": "VLTO",
+    "companyName": "Veralto",
+    "sector": "Industrials",
+    "cik": "0001967680",
+    "marketCapRank": 369,
+    "marketCapDisplay": "21.79B"
+  },
+  {
+    "ticker": "VRSN",
+    "companyName": "Verisign",
+    "sector": "Information Technology",
+    "cik": "0001014473",
+    "marketCapRank": 339,
+    "marketCapDisplay": "25.18B"
+  },
+  {
+    "ticker": "VRSK",
+    "companyName": "Verisk Analytics",
+    "sector": "Industrials",
+    "cik": "0001442145",
+    "marketCapRank": 335,
+    "marketCapDisplay": "25.48B"
+  },
+  {
+    "ticker": "VZ",
+    "companyName": "Verizon",
+    "sector": "Communication Services",
+    "cik": "0000732712",
+    "marketCapRank": 49,
+    "marketCapDisplay": "207.30B"
+  },
+  {
+    "ticker": "VRTX",
+    "companyName": "Vertex Pharmaceuticals",
+    "sector": "Health Care",
+    "cik": "0000875320",
+    "marketCapRank": 101,
+    "marketCapDisplay": "109.95B"
+  },
+  {
+    "ticker": "VRT",
+    "companyName": "Vertiv",
+    "sector": "Industrials",
+    "cik": "0001674101",
+    "marketCapRank": 500
+  },
+  {
+    "ticker": "VTRS",
+    "companyName": "Viatris",
+    "sector": "Health Care",
+    "cik": "0001792044",
+    "marketCapRank": 422,
+    "marketCapDisplay": "15.34B"
+  },
+  {
+    "ticker": "VICI",
+    "companyName": "Vici Properties",
+    "sector": "Real Estate",
+    "cik": "0001705696",
+    "marketCapRank": 306,
+    "marketCapDisplay": "29.64B"
+  },
+  {
+    "ticker": "V",
+    "companyName": "Visa Inc.",
+    "sector": "Financials",
+    "cik": "0001403161",
+    "marketCapRank": 14,
+    "marketCapDisplay": "578.47B"
+  },
+  {
+    "ticker": "VST",
+    "companyName": "Vistra Corp.",
+    "sector": "Utilities",
+    "cik": "0001692819",
+    "marketCapRank": 209,
+    "marketCapDisplay": "51.17B"
+  },
+  {
+    "ticker": "VMC",
+    "companyName": "Vulcan Materials Company",
+    "sector": "Materials",
+    "cik": "0001396009",
+    "marketCapRank": 262,
+    "marketCapDisplay": "36.48B"
+  },
+  {
+    "ticker": "WRB",
+    "companyName": "W. R. Berkley Corporation",
+    "sector": "Financials",
+    "cik": "0000011544",
+    "marketCapRank": 342,
+    "marketCapDisplay": "24.83B"
+  },
+  {
+    "ticker": "GWW",
+    "companyName": "W. W. Grainger",
+    "sector": "Industrials",
+    "cik": "0000277135",
+    "marketCapRank": 205,
+    "marketCapDisplay": "52.93B"
+  },
+  {
+    "ticker": "WAB",
+    "companyName": "Wabtec",
+    "sector": "Industrials",
+    "cik": "0000943452",
+    "marketCapRank": 236,
+    "marketCapDisplay": "43.23B"
+  },
+  {
+    "ticker": "WMT",
+    "companyName": "Walmart",
+    "sector": "Consumer Staples",
+    "cik": "0000104169",
+    "marketCapRank": 10,
+    "marketCapDisplay": "1.00T"
+  },
+  {
+    "ticker": "DIS",
+    "companyName": "Walt Disney Company (The)",
+    "sector": "Communication Services",
+    "cik": "0001744489",
+    "marketCapRank": 61,
+    "marketCapDisplay": "170.47B"
+  },
+  {
+    "ticker": "WBD",
+    "companyName": "Warner Bros. Discovery",
+    "sector": "Communication Services",
+    "cik": "0001437107",
+    "marketCapRank": 172,
+    "marketCapDisplay": "67.87B"
+  },
+  {
+    "ticker": "WM",
+    "companyName": "Waste Management",
+    "sector": "Industrials",
+    "cik": "0000823768",
+    "marketCapRank": 119,
+    "marketCapDisplay": "94.44B"
+  },
+  {
+    "ticker": "WAT",
+    "companyName": "Waters Corporation",
+    "sector": "Health Care",
+    "cik": "0001000697",
+    "marketCapRank": 304,
+    "marketCapDisplay": "29.70B"
+  },
+  {
+    "ticker": "WEC",
+    "companyName": "WEC Energy Group",
+    "sector": "Utilities",
+    "cik": "0000783325",
+    "marketCapRank": 256,
+    "marketCapDisplay": "38.02B"
+  },
+  {
+    "ticker": "WFC",
+    "companyName": "Wells Fargo",
+    "sector": "Financials",
+    "cik": "0000072971",
+    "marketCapRank": 40,
+    "marketCapDisplay": "251.48B"
+  },
+  {
+    "ticker": "WELL",
+    "companyName": "Welltower",
+    "sector": "Real Estate",
+    "cik": "0000766704",
+    "marketCapRank": 77,
+    "marketCapDisplay": "140.25B"
+  },
+  {
+    "ticker": "WST",
+    "companyName": "West Pharmaceutical Services",
+    "sector": "Health Care",
+    "cik": "0000105770",
+    "marketCapRank": 398,
+    "marketCapDisplay": "18.44B"
+  },
+  {
+    "ticker": "WDC",
+    "companyName": "Western Digital",
+    "sector": "Information Technology",
+    "cik": "0000106040",
+    "marketCapRank": 109,
+    "marketCapDisplay": "102.39B"
+  },
+  {
+    "ticker": "WY",
+    "companyName": "Weyerhaeuser",
+    "sector": "Real Estate",
+    "cik": "0000106535",
+    "marketCapRank": 409,
+    "marketCapDisplay": "17.32B"
+  },
+  {
+    "ticker": "WSM",
+    "companyName": "Williams-Sonoma, Inc.",
+    "sector": "Consumer Discretionary",
+    "cik": "0000719955",
+    "marketCapRank": 370,
+    "marketCapDisplay": "21.73B"
+  },
+  {
+    "ticker": "WMB",
+    "companyName": "Williams Companies",
+    "sector": "Energy",
+    "cik": "0000107263",
+    "marketCapRank": 125,
+    "marketCapDisplay": "88.99B"
+  },
+  {
+    "ticker": "WTW",
+    "companyName": "Willis Towers Watson",
+    "sector": "Financials",
+    "cik": "0001140536",
+    "marketCapRank": 322,
+    "marketCapDisplay": "27.42B"
+  },
+  {
+    "ticker": "WDAY",
+    "companyName": "Workday, Inc.",
+    "sector": "Information Technology",
+    "cik": "0001327811",
+    "marketCapRank": 276,
+    "marketCapDisplay": "33.29B"
+  },
+  {
+    "ticker": "WYNN",
+    "companyName": "Wynn Resorts",
+    "sector": "Consumer Discretionary",
+    "cik": "0001174922",
+    "marketCapRank": 469,
+    "marketCapDisplay": "10.69B"
+  },
+  {
+    "ticker": "XEL",
+    "companyName": "Xcel Energy",
+    "sector": "Utilities",
+    "cik": "0000072903",
+    "marketCapRank": 215,
+    "marketCapDisplay": "50.02B"
+  },
+  {
+    "ticker": "XYL",
+    "companyName": "Xylem Inc.",
+    "sector": "Industrials",
+    "cik": "0001524472",
+    "marketCapRank": 301,
+    "marketCapDisplay": "30.26B"
+  },
+  {
+    "ticker": "YUM",
+    "companyName": "Yum! Brands",
+    "sector": "Consumer Discretionary",
+    "cik": "0001041061",
+    "marketCapRank": 235,
+    "marketCapDisplay": "43.50B"
+  },
+  {
+    "ticker": "ZBRA",
+    "companyName": "Zebra Technologies",
+    "sector": "Information Technology",
+    "cik": "0000877212",
+    "marketCapRank": 472,
+    "marketCapDisplay": "10.39B"
+  },
+  {
+    "ticker": "ZBH",
+    "companyName": "Zimmer Biomet",
+    "sector": "Health Care",
+    "cik": "0001136869",
+    "marketCapRank": 406,
+    "marketCapDisplay": "17.61B"
+  },
+  {
+    "ticker": "ZTS",
+    "companyName": "Zoetis",
+    "sector": "Health Care",
+    "cik": "0001555280",
+    "marketCapRank": 216,
+    "marketCapDisplay": "49.92B"
+  }
+]

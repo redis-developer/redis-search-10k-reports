@@ -1,0 +1,27 @@
+{
+  "datasetName": "sp500-fy2025-10k",
+  "datasetVersion": "2026.04.07.1302",
+  "description": "Generated section-aligned chunk corpus with 108422 filing chunks.",
+  "targetUniverse": "S&P 500 FY2025-era constituents",
+  "targetFilingType": "10-K",
+  "targetSections": [
+    "Business",
+    "Risk Factors",
+    "Management's Discussion and Analysis"
+  ],
+  "chunking": {
+    "strategy": "section-aligned",
+    "overlapPolicy": "small-overlap",
+    "notes": "Chunk sections after normalization so retrieval can balance full-text and vector similarity."
+  },
+  "sizeGuidance": {
+    "preferredCompressedMaxBytes": 104857600,
+    "notes": "Prefer breadth-first coverage while keeping the corpus near the 100 MB range."
+  },
+  "files": {
+    "schema": "schema.json",
+    "coverage": "coverage-template.json",
+    "diagnostics": "retrieval-diagnostics-template.json",
+    "samples": "sample-records.json"
+  }
+}
