@@ -216,7 +216,7 @@ p {
 
 .form-row-modes {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
     gap: 10px;
     flex-wrap: wrap;
@@ -224,6 +224,10 @@ p {
 
 .field-group-limit {
     width: 86px;
+}
+
+.field-group-limit input {
+    height: var(--mode-row-button-height);
 }
 
 .form-grid {
@@ -740,10 +744,6 @@ mark {
 
     .results-subtitle {
         text-align: left;
-    }
-
-    .form-row-modes {
-        align-items: flex-start;
     }
 
     .form-actions {
