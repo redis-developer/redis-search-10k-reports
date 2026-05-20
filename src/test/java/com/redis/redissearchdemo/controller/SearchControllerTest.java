@@ -1,5 +1,14 @@
 package com.redis.redissearchdemo.controller;
 
+import com.redis.redissearchdemo.dto.AutocompleteResponse;
+import com.redis.redissearchdemo.dto.AutocompleteSuggestion;
+import com.redis.redissearchdemo.dto.DatasetInitializationResult;
+import com.redis.redissearchdemo.dto.DatasetInitializationResponse;
+import com.redis.redissearchdemo.dto.DatasetStatusResponse;
+import com.redis.redissearchdemo.dto.FiltersResponse;
+import com.redis.redissearchdemo.dto.SearchDiagnostics;
+import com.redis.redissearchdemo.dto.SearchResponse;
+import com.redis.redissearchdemo.dto.SearchResult;
 import com.redis.redissearchdemo.service.FilingChunkService;
 import com.redis.redissearchdemo.service.SearchService;
 import org.junit.jupiter.api.Test;
@@ -8,10 +17,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -34,91 +41,93 @@ class SearchControllerTest {
 
     @Test
     void filtersEndpointReturnsCoverageAndMetadataSets() {
-        Map<String, Object> coverage = new LinkedHashMap<>();
-        coverage.put("indexedCompanies", 2);
-        coverage.put("targetCompanies", 500);
-        when(searchService.getCoverageSummary()).thenReturn(coverage);
         when(searchService.getAllSectors()).thenReturn(linkedSet("Financials", "Information Technology"));
         when(searchService.getAllSections()).thenReturn(linkedSet("Business", "Risk Factors"));
 
-        Map<String, Object> payload = controller.filters();
+        FiltersResponse payload = controller.filters();
 
-        assertThat(payload).containsEntry("coverage", coverage);
-        assertThat((Set<String>) payload.get("sectors")).containsExactly("Financials", "Information Technology");
-        assertThat((Set<String>) payload.get("sections")).containsExactly("Business", "Risk Factors");
+        assertThat(payload.sectors()).containsExactly("Financials", "Information Technology");
+        assertThat(payload.sections()).containsExactly("Business", "Risk Factors");
     }
 
     @Test
     void autocompleteRoutesByFieldAndFallsBackToEmptyList() {
-        when(searchService.autocompleteCompanyNames("Mic", 8)).thenReturn(List.of(Map.of("label", "Microsoft Corporation")));
-        when(searchService.autocompleteTickers("MS", 5)).thenReturn(List.of(Map.of("label", "MSFT")));
-        when(searchService.autocompleteSections("Risk", 3)).thenReturn(List.of(Map.of("label", "Risk Factors")));
+        when(searchService.autocompleteCompanyNames("Mic"))
+                .thenReturn(List.of(new AutocompleteSuggestion("Microsoft Corporation", "Microsoft Corporation")));
+        when(searchService.autocompleteTickers("MS"))
+                .thenReturn(List.of(new AutocompleteSuggestion("MSFT", "MSFT")));
+        when(searchService.autocompleteSections("Risk"))
+                .thenReturn(List.of(new AutocompleteSuggestion("Risk Factors", "Risk Factors")));
 
-        Map<String, Object> company = controller.autocomplete("companyName", "Mic", 8);
-        Map<String, Object> ticker = controller.autocomplete("ticker", "MS", 5);
-        Map<String, Object> section = controller.autocomplete("sectionName", "Risk", 3);
-        Map<String, Object> invalid = controller.autocomplete("bogus", "Any", 4);
+        AutocompleteResponse company = controller.autocomplete("companyName", "Mic");
+        AutocompleteResponse ticker = controller.autocomplete("ticker", "MS");
+        AutocompleteResponse section = controller.autocomplete("sectionName", "Risk");
+        AutocompleteResponse invalid = controller.autocomplete("bogus", "Any");
 
-        assertThat(company.get("field")).isEqualTo("companyName");
-        assertThat((List<?>) company.get("suggestions")).hasSize(1);
-        assertThat((Map<String, Object>) ((List<?>) ticker.get("suggestions")).get(0)).containsEntry("label", "MSFT");
-        assertThat((Map<String, Object>) ((List<?>) section.get("suggestions")).get(0)).containsEntry("label", "Risk Factors");
-        assertThat((List<?>) invalid.get("suggestions")).isEmpty();
+        assertThat(company.field()).isEqualTo("companyName");
+        assertThat(company.suggestions()).hasSize(1);
+        assertThat(ticker.suggestions().get(0).label()).isEqualTo("MSFT");
+        assertThat(section.suggestions().get(0).label()).isEqualTo("Risk Factors");
+        assertThat(invalid.suggestions()).isEmpty();
     }
 
     @Test
     void searchUsesHybridDefaultsWhenRequestIsNull() {
-        Map<String, Object> response = new LinkedHashMap<>();
-        response.put("mode", "hybrid");
-        response.put("results", List.of(Map.of("companyName", "Apple Inc.")));
-        response.put("count", 1);
-        response.put("diagnostics", Map.of("latencyMs", 42, "resultCount", 1));
-        when(searchService.search(eq("hybrid"), eq(null), eq(null), eq(null), eq(List.of()), eq(List.of()), eq(2025), eq(null), eq(12)))
+        SearchResponse response = new SearchResponse(
+                null,
+                "hybrid",
+                List.of(new SearchResult(
+                        "chunk-1",
+                        "Apple Inc.",
+                        "AAPL",
+                        "Information Technology",
+                        "Business",
+                        2025,
+                        "2025-01-31",
+                        "https://www.sec.gov/",
+                        "Apple filing chunk",
+                        "Apple filing chunk",
+                        "hybrid"
+                )),
+                1,
+                new SearchDiagnostics(42, 1)
+        );
+        when(searchService.search(eq("hybrid"), eq(null), eq(null), eq(null), eq(List.of()), eq(List.of()), eq(2025), eq(null), eq(20)))
                 .thenReturn(response);
 
-        Map<String, Object> payload = controller.search(null);
+        SearchResponse payload = controller.search(null);
 
-        assertThat(payload.get("mode")).isEqualTo("hybrid");
-        assertThat(payload.get("count")).isEqualTo(1);
-        assertThat((List<?>) payload.get("results")).hasSize(1);
-        verify(searchService).search(eq("hybrid"), isNull(), isNull(), isNull(), eq(List.of()), eq(List.of()), eq(2025), isNull(), eq(12));
+        assertThat(payload.mode()).isEqualTo("hybrid");
+        assertThat(payload.count()).isEqualTo(1);
+        assertThat(payload.results()).hasSize(1);
+        verify(searchService).search(eq("hybrid"), isNull(), isNull(), isNull(), eq(List.of()), eq(List.of()), eq(2025), isNull(), eq(20));
     }
 
     @Test
     void datasetStatusReflectsInitializationStateAndBounds() {
-        Map<String, Object> coverage = new LinkedHashMap<>();
-        coverage.put("indexedCompanies", 0);
-        coverage.put("targetCompanies", 500);
         when(filingChunkService.isDataLoaded()).thenReturn(false);
-        when(filingChunkService.minCompanyCount()).thenReturn(10);
-        when(filingChunkService.maxCompanyCount()).thenReturn(500);
-        when(searchService.getCoverageSummary()).thenReturn(coverage);
+        when(filingChunkService.indexedCompanyCount()).thenReturn(0);
+        when(filingChunkService.indexedChunkCount()).thenReturn(0);
 
-        Map<String, Object> payload = controller.datasetStatus();
+        DatasetStatusResponse payload = controller.datasetStatus();
 
-        assertThat(payload).containsEntry("initialized", false);
-        assertThat(payload).containsEntry("minCompanyCount", 10);
-        assertThat(payload).containsEntry("maxCompanyCount", 500);
-        assertThat(payload).containsEntry("coverage", coverage);
+        assertThat(payload.initialized()).isFalse();
+        assertThat(payload.companyCount()).isZero();
+        assertThat(payload.chunkCount()).isZero();
     }
 
     @Test
     void initializeDatasetLoadsRequestedCompanyCount() throws Exception {
-        Map<String, Object> coverage = new LinkedHashMap<>();
-        coverage.put("indexedCompanies", 50);
-        coverage.put("targetCompanies", 500);
-        when(filingChunkService.initializeDefaultDataset(50))
-                .thenReturn(new FilingChunkService.DatasetInitializationResult(50, 1234, 9876));
-        when(searchService.getCoverageSummary()).thenReturn(coverage);
+        when(filingChunkService.initializeDefaultDataset())
+                .thenReturn(new DatasetInitializationResult(25, 1234, 9876));
 
-        Map<String, Object> payload = controller.initializeDataset(new SearchController.InitializeDatasetRequest(50));
+        DatasetInitializationResponse payload = controller.initializeDataset();
 
-        assertThat(payload).containsEntry("initialized", true);
-        assertThat(payload).containsEntry("companyCount", 50);
-        assertThat(payload).containsEntry("chunkCount", 1234);
-        assertThat(payload).containsEntry("indexingDurationMs", 9876L);
-        assertThat(payload).containsEntry("coverage", coverage);
-        verify(filingChunkService).initializeDefaultDataset(50);
+        assertThat(payload.initialized()).isTrue();
+        assertThat(payload.companyCount()).isEqualTo(25);
+        assertThat(payload.chunkCount()).isEqualTo(1234);
+        assertThat(payload.indexingDurationMs()).isEqualTo(9876L);
+        verify(filingChunkService).initializeDefaultDataset();
     }
 
     private Set<String> linkedSet(String... values) {

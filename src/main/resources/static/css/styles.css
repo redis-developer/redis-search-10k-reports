@@ -115,68 +115,6 @@ p {
     padding: 16px 20px 28px;
 }
 
-.dataset-setup-modal {
-    margin-bottom: 16px;
-}
-
-.dataset-setup-card {
-    max-width: 560px;
-    padding: 18px;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    background: rgba(16, 26, 33, 0.98);
-    box-shadow: var(--shadow-panel);
-}
-
-.dataset-setup-card h2 {
-    margin-top: 6px;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.dataset-setup-copy {
-    margin-top: 8px;
-    color: var(--color-text-secondary);
-    font-size: 0.86rem;
-    line-height: 1.5;
-}
-
-.dataset-setup-form {
-    display: grid;
-    gap: 10px;
-    margin-top: 16px;
-}
-
-.dataset-setup-form label {
-    color: var(--color-text-secondary);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.dataset-setup-value-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.dataset-setup-value-row strong {
-    font-size: 0.96rem;
-}
-
-.dataset-setup-hint {
-    color: var(--color-text-muted);
-    font-size: 0.78rem;
-}
-
-.dataset-setup-actions {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .control-dock {
     position: sticky;
     top: var(--toolbar-height);
@@ -192,10 +130,6 @@ p {
 
 .controls-panel {
     padding: 10px;
-}
-
-.search-form.is-disabled {
-    opacity: 0.52;
 }
 
 .mode-toggle {
@@ -242,10 +176,22 @@ p {
     padding: 0 2px;
 }
 
-.coverage-status {
+.dataset-feedback-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.dataset-status {
     color: var(--color-text-muted);
     font-size: 0.76rem;
     line-height: 1.35;
+}
+
+.dataset-action-button {
+    flex: 0 0 auto;
 }
 
 .search-status {
@@ -274,6 +220,10 @@ p {
     justify-content: flex-start;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.field-group-limit {
+    width: 86px;
 }
 
 .form-grid {
@@ -522,6 +472,12 @@ textarea:focus,
 .primary-button:hover {
     background: var(--color-brand-deep);
     border-color: var(--color-brand-deep);
+}
+
+.primary-button:disabled,
+.secondary-button:disabled {
+    cursor: progress;
+    opacity: 0.65;
 }
 
 .secondary-button {

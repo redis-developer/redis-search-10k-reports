@@ -7,26 +7,23 @@ const API = {
 };
 
 const INITIAL_MODE = "hybrid";
+const INITIAL_LIMIT = 20;
 const INITIAL_RESULTS_HEADING = "Chunk-Level Matches";
 const INITIAL_RESULTS_SUBTITLE =
-    "Use filters or a natural-language query to inspect Redis OM Spring ranking.";
+    "Enter a natural-language query to inspect Redis OM Spring ranking.";
 const INITIAL_SINGLE_RESULTS_EMPTY_STATE =
-    '<div class="empty-state">Run a retrieval query to inspect ranked FY2025 filing chunks.</div>';
+    '<div class="empty-state">Enter a query to inspect ranked FY2025 filing chunks.</div>';
 
 const state = {
     mode: INITIAL_MODE,
     filters: {
-        coverage: {
-            indexedCompanies: 0,
-            targetCompanies: 500
-        },
         sectors: [],
         sections: []
     },
     dataset: {
         initialized: false,
-        minCompanyCount: 10,
-        maxCompanyCount: 500
+        companyCount: 0,
+        chunkCount: 0
     },
     selections: {
         sectors: [],
@@ -105,87 +102,57 @@ async function fetchJson(url, options = {}) {
 }
 
 async function loadDatasetStatus() {
-    const payload = await fetchJson(API.datasetStatus);
-    state.dataset = {
-        initialized: Boolean(payload.initialized),
-        minCompanyCount: payload.minCompanyCount || 10,
-        maxCompanyCount: payload.maxCompanyCount || 500
-    };
-
-    state.filters.coverage = payload.coverage || state.filters.coverage;
-    renderCoverage();
-    updateDatasetSetupBounds();
-    toggleDatasetSetup(!state.dataset.initialized);
-    setSearchEnabled(state.dataset.initialized);
+    try {
+        const payload = await fetchJson(API.datasetStatus);
+        state.dataset = {
+            initialized: Boolean(payload.initialized),
+            companyCount: Number(payload.companyCount || 0),
+            chunkCount: Number(payload.chunkCount || 0)
+        };
+        renderDatasetStatus();
+        renderDatasetAction();
+    } catch (error) {
+        console.error("Unable to load dataset status", error);
+        document.getElementById("dataset-status").textContent = "Dataset status unavailable";
+        renderDatasetAction();
+    }
 }
 
 async function loadFilters() {
     try {
         const payload = await fetchJson(API.filters);
         state.filters = {
-            coverage: payload.coverage || state.filters.coverage,
             sectors: payload.sectors || payload.filters?.sectors || [],
             sections: payload.sections || payload.filters?.sections || []
         };
     } catch (error) {
         console.error("Unable to load live filters", error);
         state.filters = {
-            coverage: {
-                indexedCompanies: 0,
-                targetCompanies: 500
-            },
             sectors: [],
             sections: []
         };
     }
 
-    renderCoverage();
     renderOptionList("sector", state.filters.sectors);
     renderOptionList("section", state.filters.sections);
     renderSelectedPills("sector");
     renderSelectedPills("section");
 }
 
-function renderCoverage() {
-    const coverage = state.filters.coverage || {};
-    document.getElementById("coverage-status").textContent =
-        `${coverage.indexedCompanies || 0} / ${coverage.targetCompanies || 500} companies indexed`;
-}
-
-function updateDatasetSetupBounds() {
-    const range = document.getElementById("company-count-range");
-    if (!range) {
+function renderDatasetStatus() {
+    const status = document.getElementById("dataset-status");
+    if (!state.dataset.initialized) {
+        status.textContent = "No filing chunks indexed in Redis";
         return;
     }
-    range.min = state.dataset.minCompanyCount;
-    range.max = state.dataset.maxCompanyCount;
-    range.step = 1;
-    if (Number(range.value) < Number(range.min) || Number(range.value) > Number(range.max)) {
-        range.value = Math.min(Math.max(Number(range.value), Number(range.min)), Number(range.max));
-    }
-    renderDatasetSetupValue();
+    const companyCount = Number(state.dataset.companyCount || 0);
+    const chunkCount = Number(state.dataset.chunkCount || 0);
+    status.textContent = `${companyCount} companies, ${chunkCount.toLocaleString()} chunks indexed`;
 }
 
-function renderDatasetSetupValue() {
-    const range = document.getElementById("company-count-range");
-    const value = Number(range.value);
-    document.getElementById("company-count-value").textContent = `${value} companies`;
-}
-
-function toggleDatasetSetup(visible) {
-    const modal = document.getElementById("dataset-setup-modal");
-    modal.classList.toggle("hidden", !visible);
-}
-
-function setSearchEnabled(enabled) {
-    const form = document.getElementById("search-form");
-    form.querySelectorAll("input, select, textarea, button").forEach(element => {
-        if (element.id === "initialize-dataset-button" || element.id === "company-count-range") {
-            return;
-        }
-        element.disabled = !enabled;
-    });
-    form.classList.toggle("is-disabled", !enabled);
+function renderDatasetAction() {
+    const button = document.getElementById("initialize-dataset-button");
+    button.textContent = state.dataset.initialized ? "Reload Data" : "Load Data";
 }
 
 function renderOptionList(filterKey, options) {
@@ -204,7 +171,8 @@ function renderOptionList(filterKey, options) {
             </label>
         `)
         .join("");
-    listElement.innerHTML = markup || '<div class="empty-state">No options available.</div>';
+    const emptyMessage = state.dataset.initialized ? "No options available." : "Load data to show options.";
+    listElement.innerHTML = markup || `<div class="empty-state">${emptyMessage}</div>`;
     updateTriggerText(filterKey);
 }
 
@@ -237,6 +205,7 @@ function renderSelectedPills(filterKey) {
 }
 
 function buildSearchPayload() {
+    const limit = Number(document.getElementById("limit-input").value || INITIAL_LIMIT);
     return {
         mode: state.mode,
         query: document.getElementById("query-input").value.trim(),
@@ -245,7 +214,8 @@ function buildSearchPayload() {
         sectors: [...state.selections.sectors],
         sections: [...state.selections.sections],
         filingYear: document.getElementById("filing-year").value,
-        filingDate: document.getElementById("filing-date").value
+        filingDate: document.getElementById("filing-date").value,
+        limit: Number.isFinite(limit) ? limit : INITIAL_LIMIT
     };
 }
 
@@ -282,12 +252,13 @@ function resetInteractiveState() {
 }
 
 async function runSearch() {
-    if (!state.dataset.initialized) {
-        renderSearchStatus("Initialize the dataset first to start searching.", true);
+    const payload = buildSearchPayload();
+    if (!payload.query) {
+        renderSearchStatus("Enter a free-text query to run retrieval.", true);
+        document.getElementById("query-input").focus();
         return;
     }
 
-    const payload = buildSearchPayload();
     const subtitle = document.getElementById("results-subtitle");
 
     subtitle.textContent = "Running retrieval against Redis indexes...";
@@ -307,77 +278,44 @@ async function runSearch() {
 
 async function initializeDataset() {
     const button = document.getElementById("initialize-dataset-button");
-    const range = document.getElementById("company-count-range");
-    const companyCount = Number(range.value);
 
     button.disabled = true;
-    button.textContent = "Indexing...";
-    document.getElementById("dataset-setup-hint").textContent =
-        "Loading the selected companies into Redis and generating embeddings...";
+    button.textContent = "Loading Data...";
+    document.getElementById("dataset-status").textContent = "Indexing the workshop dataset into Redis...";
+    renderSearchStatus("", false);
 
     try {
         const payload = await fetchJson(API.datasetInitialize, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ companyCount })
+            method: "POST"
         });
 
-        state.dataset.initialized = true;
-        state.filters.coverage = payload.coverage || state.filters.coverage;
-        renderCoverage();
-        toggleDatasetSetup(false);
-        setSearchEnabled(true);
+        state.dataset = {
+            initialized: Boolean(payload.initialized),
+            companyCount: Number(payload.companyCount || 0),
+            chunkCount: Number(payload.chunkCount || 0)
+        };
+        renderDatasetStatus();
+        renderDatasetAction();
         await loadFilters();
         resetResultsView();
-        renderSearchStatus(buildInitializationStatus(payload), true);
+        renderSearchStatus(buildDatasetLoadedStatus(payload), true);
     } catch (error) {
         console.error("Dataset initialization failed", error);
-        document.getElementById("dataset-setup-hint").textContent =
-            `Initialization failed: ${error.message}. Check the Spring app and Redis logs.`;
+        document.getElementById("dataset-status").textContent =
+            `Dataset load failed: ${error.message}. Check the Spring app and Redis logs.`;
     } finally {
         button.disabled = false;
-        button.textContent = "Initialize Dataset";
+        renderDatasetAction();
     }
 }
 
-function buildInitializationStatus(payload) {
+function buildDatasetLoadedStatus(payload) {
     const companyCount = Number(payload?.companyCount || 0);
     const chunkCount = Number(payload?.chunkCount || 0);
-    const duration = formatDuration(payload?.indexingDurationMs);
-
-    if (companyCount > 0 && chunkCount > 0 && duration) {
-        return `Indexed ${companyCount} companies and ${chunkCount.toLocaleString()} chunks into Redis in ${duration}.`;
+    if (companyCount > 0 && chunkCount > 0) {
+        return `Loaded ${companyCount} companies and ${chunkCount.toLocaleString()} chunks into Redis.`;
     }
-    if (companyCount > 0 && duration) {
-        return `Indexed ${companyCount} companies into Redis in ${duration}.`;
-    }
-    if (companyCount > 0) {
-        return `Indexed ${companyCount} companies into Redis.`;
-    }
-    return "Indexed the selected dataset into Redis.";
-}
-
-function formatDuration(value) {
-    const milliseconds = Number(value);
-    if (!Number.isFinite(milliseconds) || milliseconds < 0) {
-        return "";
-    }
-
-    if (milliseconds < 1000) {
-        return `${milliseconds} ms`;
-    }
-
-    const totalSeconds = Math.round(milliseconds / 1000);
-    const minutes = Math.floor(totalSeconds / 60);
-    const seconds = totalSeconds % 60;
-
-    if (minutes === 0) {
-        return `${totalSeconds}s`;
-    }
-    if (seconds === 0) {
-        return `${minutes}m`;
-    }
-    return `${minutes}m ${seconds}s`;
+    return "Loaded the workshop dataset into Redis.";
 }
 
 function renderSearchFailure(error) {
@@ -659,10 +597,22 @@ function initializeAutocomplete() {
 
 function initializeForm() {
     const form = document.getElementById("search-form");
+    const queryInput = document.getElementById("query-input");
 
     form.addEventListener("submit", event => {
         event.preventDefault();
+        queryInput.setCustomValidity("");
+        if (!queryInput.value.trim()) {
+            queryInput.setCustomValidity("Enter a query to run retrieval.");
+            queryInput.reportValidity();
+            renderSearchStatus("Enter a free-text query to run retrieval.", true);
+            return;
+        }
         runSearch();
+    });
+
+    queryInput.addEventListener("input", () => {
+        queryInput.setCustomValidity("");
     });
 
     document.getElementById("reset-button").addEventListener("click", () => {
@@ -671,21 +621,14 @@ function initializeForm() {
         document.getElementById("company-input").value = "";
         document.getElementById("ticker-input").value = "";
         document.getElementById("filing-date").value = "";
+        document.getElementById("limit-input").value = INITIAL_LIMIT;
         resetInteractiveState();
         resetResultsView();
     });
-}
 
-function initializeDatasetSetup() {
-    const form = document.getElementById("dataset-setup-form");
-    const range = document.getElementById("company-count-range");
-
-    range.addEventListener("input", renderDatasetSetupValue);
-    form.addEventListener("submit", event => {
-        event.preventDefault();
+    document.getElementById("initialize-dataset-button").addEventListener("click", () => {
         initializeDataset();
     });
-    renderDatasetSetupValue();
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -693,10 +636,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initializeMultiSelects();
     initializeAutocomplete();
     initializeForm();
-    initializeDatasetSetup();
     resetResultsView();
     await loadDatasetStatus();
-    if (state.dataset.initialized) {
-        await loadFilters();
-    }
+    await loadFilters();
 });

@@ -1,5 +1,13 @@
 package com.redis.redissearchdemo.controller;
 
+import com.redis.redissearchdemo.dto.AutocompleteResponse;
+import com.redis.redissearchdemo.dto.AutocompleteSuggestion;
+import com.redis.redissearchdemo.dto.DatasetInitializationResult;
+import com.redis.redissearchdemo.dto.DatasetInitializationResponse;
+import com.redis.redissearchdemo.dto.DatasetStatusResponse;
+import com.redis.redissearchdemo.dto.FiltersResponse;
+import com.redis.redissearchdemo.dto.SearchRequest;
+import com.redis.redissearchdemo.dto.SearchResponse;
 import com.redis.redissearchdemo.service.FilingChunkService;
 import com.redis.redissearchdemo.service.SearchService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,9 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 public class SearchController {
@@ -24,62 +30,51 @@ public class SearchController {
     }
 
     @GetMapping("/filters")
-    public Map<String, Object> filters() {
-        Map<String, Object> payload = new LinkedHashMap<>();
-        payload.put("coverage", searchService.getCoverageSummary());
-        payload.put("sectors", searchService.getAllSectors());
-        payload.put("sections", searchService.getAllSections());
-        return payload;
+    public FiltersResponse filters() {
+        return new FiltersResponse(
+                searchService.getAllSectors(),
+                searchService.getAllSections()
+        );
     }
 
     @GetMapping("/dataset/status")
-    public Map<String, Object> datasetStatus() {
-        Map<String, Object> payload = new LinkedHashMap<>();
-        payload.put("initialized", filingChunkService.isDataLoaded());
-        payload.put("minCompanyCount", filingChunkService.minCompanyCount());
-        payload.put("maxCompanyCount", filingChunkService.maxCompanyCount());
-        payload.put("coverage", searchService.getCoverageSummary());
-        return payload;
+    public DatasetStatusResponse datasetStatus() {
+        return new DatasetStatusResponse(
+                filingChunkService.isDataLoaded(),
+                filingChunkService.indexedCompanyCount(),
+                filingChunkService.indexedChunkCount()
+        );
     }
 
     @PostMapping("/dataset/initialize")
-    public Map<String, Object> initializeDataset(@RequestBody InitializeDatasetRequest request) throws Exception {
-        InitializeDatasetRequest safeRequest = request == null ? new InitializeDatasetRequest() : request;
-        int companyCount = safeRequest.companyCount() == null ? 100 : safeRequest.companyCount();
-        FilingChunkService.DatasetInitializationResult initializationResult =
-                filingChunkService.initializeDefaultDataset(companyCount);
+    public DatasetInitializationResponse initializeDataset() throws Exception {
+        DatasetInitializationResult initializationResult = filingChunkService.initializeDefaultDataset();
 
-        Map<String, Object> payload = new LinkedHashMap<>();
-        payload.put("initialized", true);
-        payload.put("companyCount", initializationResult.companyCount());
-        payload.put("chunkCount", initializationResult.chunkCount());
-        payload.put("indexingDurationMs", initializationResult.elapsedMillis());
-        payload.put("coverage", searchService.getCoverageSummary());
-        return payload;
+        return new DatasetInitializationResponse(
+                true,
+                initializationResult.companyCount(),
+                initializationResult.chunkCount(),
+                initializationResult.elapsedMillis()
+        );
     }
 
     @GetMapping("/autocomplete")
-    public Map<String, Object> autocomplete(
+    public AutocompleteResponse autocomplete(
             @RequestParam String field,
-            @RequestParam("q") String query,
-            @RequestParam(required = false, defaultValue = "8") Integer limit
+            @RequestParam("q") String query
     ) {
-        List<Map<String, Object>> suggestions = switch (field) {
-            case "companyName" -> searchService.autocompleteCompanyNames(query, limit);
-            case "ticker" -> searchService.autocompleteTickers(query, limit);
-            case "sectionName" -> searchService.autocompleteSections(query, limit);
+        List<AutocompleteSuggestion> suggestions = switch (field) {
+            case "companyName" -> searchService.autocompleteCompanyNames(query);
+            case "ticker" -> searchService.autocompleteTickers(query);
+            case "sectionName" -> searchService.autocompleteSections(query);
             default -> List.of();
         };
 
-        Map<String, Object> payload = new LinkedHashMap<>();
-        payload.put("field", field);
-        payload.put("q", query);
-        payload.put("suggestions", suggestions);
-        return payload;
+        return new AutocompleteResponse(field, query, suggestions);
     }
 
     @PostMapping("/search")
-    public Map<String, Object> search(@RequestBody(required = false) SearchRequest request) {
+    public SearchResponse search(@RequestBody(required = false) SearchRequest request) {
         SearchRequest safeRequest = request == null ? new SearchRequest() : request;
 
         Integer filingYear = parseFilingYear(safeRequest.filingYear());
@@ -102,27 +97,5 @@ public class SearchController {
         }
         String digits = filingYear.replaceAll("[^0-9]", "");
         return digits.isBlank() ? null : Integer.parseInt(digits);
-    }
-
-    public record SearchRequest(
-            String mode,
-            String query,
-            String companyName,
-            String ticker,
-            List<String> sectors,
-            List<String> sections,
-            String filingYear,
-            String filingDate,
-            Integer limit
-    ) {
-        public SearchRequest() {
-            this("hybrid", null, null, null, List.of(), List.of(), "FY2025", null, 12);
-        }
-    }
-
-    public record InitializeDatasetRequest(Integer companyCount) {
-        public InitializeDatasetRequest() {
-            this(100);
-        }
     }
 }

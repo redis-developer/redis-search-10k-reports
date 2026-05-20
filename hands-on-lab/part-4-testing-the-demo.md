@@ -1,6 +1,6 @@
 # Part 4: Testing the Demo
 
-At this point, the goal is simple: run the application, load the dataset, and verify that each search mode behaves the way we expect.
+At this point, the goal is simple: run the application and verify that each search mode behaves the way we expect.
 
 ## 1. Start the application
 
@@ -16,28 +16,29 @@ The demo should be available at:
 http://localhost:8080
 ```
 
-## 2. Initialize the dataset
+When Redis is empty, the application indexes the fixed 25 company workshop dataset during startup.
 
-First, check whether the dataset is already loaded:
+## 2. Verify the dataset status
+
+Check whether the dataset is loaded:
 
 ```bash
 curl -s http://localhost:8080/dataset/status
 ```
 
-If it is not initialized, load it:
+If `initialized` is `false`, restart the Spring app with Redis running. You can also trigger the same load manually:
 
 ```bash
-curl -s -X POST http://localhost:8080/dataset/initialize \
-  -H 'Content-Type: application/json' \
-  -d '{"companyCount":100}'
+curl -s -X POST http://localhost:8080/dataset/initialize
 ```
+
+In the browser UI, the `Load Data` button next to the dataset status triggers the same endpoint.
 
 What to verify:
 
 - `initialized` is `true`
 - the response includes `companyCount`
 - the response includes `chunkCount`
-- the response includes `indexingDurationMs`
 
 ## 3. Verify filters and autocomplete
 

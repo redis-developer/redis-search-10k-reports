@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.redis.redissearchdemo.domain.FilingChunk;
+import com.redis.redissearchdemo.dto.DatasetInitializationResult;
 import com.redis.redissearchdemo.repository.FilingChunkRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,8 +28,7 @@ public class FilingChunkService {
     private static final Logger log = LoggerFactory.getLogger(FilingChunkService.class);
     private static final String DEFAULT_DATASET_PATH = "datasets/sp500-fy2025-10k/sample-records.json";
     private static final String DEFAULT_CONSTITUENTS_SNAPSHOT_PATH = "datasets/sp500-fy2025-10k/constituents-snapshot.json";
-    private static final int MIN_COMPANY_COUNT = 10;
-    private static final int ABSOLUTE_MAX_COMPANY_COUNT = 500;
+    private static final int WORKSHOP_COMPANY_COUNT = 25;
     private static final int SAVE_BATCH_SIZE = 250;
 
     private final ObjectMapper objectMapper;
@@ -50,8 +50,8 @@ public class FilingChunkService {
         loadAndSaveFilingChunks(DEFAULT_DATASET_PATH);
     }
 
-    public DatasetInitializationResult initializeDefaultDataset(int companyCount) throws Exception {
-        int boundedCompanyCount = boundCompanyCount(companyCount);
+    public DatasetInitializationResult initializeDefaultDataset() throws Exception {
+        int boundedCompanyCount = targetCompanyCount();
         List<FilingChunk> filingChunks = readDefaultDataset();
         List<FilingChunk> subset = selectFirstCompanies(filingChunks, boundedCompanyCount);
         int loadedCompanyCount = distinctTickerCount(subset);
@@ -91,12 +91,23 @@ public class FilingChunkService {
         return filingChunkRepository.count() > 0;
     }
 
-    public int minCompanyCount() {
-        return MIN_COMPANY_COUNT;
+    public int targetCompanyCount() {
+        return Math.min(WORKSHOP_COMPANY_COUNT, availableCompanyCount());
     }
 
-    public int maxCompanyCount() {
-        return Math.min(ABSOLUTE_MAX_COMPANY_COUNT, availableCompanyCount());
+    public int indexedCompanyCount() {
+        Set<String> tickers = new LinkedHashSet<>();
+        filingChunkRepository.findAll().forEach(chunk -> {
+            String ticker = chunk.getTicker();
+            if (ticker != null && !ticker.isBlank()) {
+                tickers.add(ticker);
+            }
+        });
+        return tickers.size();
+    }
+
+    public int indexedChunkCount() {
+        return Math.toIntExact(filingChunkRepository.count());
     }
 
     private List<FilingChunk> selectFirstCompanies(List<FilingChunk> filingChunks, int companyCount) {
@@ -151,16 +162,6 @@ public class FilingChunkService {
         }
 
         return new ArrayList<>(selectedTickers);
-    }
-
-    private int boundCompanyCount(int requestedCompanyCount) {
-        int availableCompanyCount = availableCompanyCount();
-        if (availableCompanyCount <= 0) {
-            return 0;
-        }
-
-        int lowerBound = Math.min(MIN_COMPANY_COUNT, availableCompanyCount);
-        return Math.max(lowerBound, Math.min(requestedCompanyCount, availableCompanyCount));
     }
 
     private synchronized int availableCompanyCount() {
@@ -244,13 +245,6 @@ public class FilingChunkService {
 
     private ObjectMapper datasetObjectMapper() {
         return objectMapper.copy().disable(MapperFeature.USE_GETTERS_AS_SETTERS);
-    }
-
-    public record DatasetInitializationResult(
-            int companyCount,
-            int chunkCount,
-            long elapsedMillis
-    ) {
     }
 
     private record ConstituentSnapshot(

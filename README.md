@@ -12,7 +12,7 @@ Dataset:
 - Java 25
 - Docker and Docker Compose
 - A Redis runtime on port `6379` with Redis Search, JSON, and vector support
-- Enough local disk and patience for a large packaged dataset on first run
+- Enough local disk and patience for initial dataset indexing
 
 Notes:
 
@@ -32,7 +32,7 @@ This starts Redis and RedisInsight.
 
 Note:
 
-- The compose file uses `redis/redis-stack-server:7.4.0-v8` and `redis/redisinsight:2.70`.
+- The compose file uses `redis:8` and `redis/redisinsight:2.70`.
 - Vector and hybrid search also depend on a working embedding runtime.
 - If the embedder is not ready, full-text, filters, and autocomplete can still work while vector and hybrid fail at runtime.
 
@@ -53,22 +53,22 @@ http://localhost:8080
 The browser UI is the main way to experience this demo.
 
 1. Open `http://localhost:8080`.
-2. If this is the first run, choose how many companies to index and initialize the dataset.
-3. Use the free-text query box to search the 10-K corpus.
-4. Use the filters to narrow by company, ticker, sector, section, filing year, or filing date.
-5. Switch between `Full-Text`, `Vector`, and `Hybrid` modes.
-6. Review the ranked chunk results and the live diagnostics shown in the UI.
+2. Use the free-text query box to search the 10-K corpus.
+3. Use the filters to narrow by company, ticker, sector, section, filing year, or filing date.
+4. Switch between `Full-Text`, `Vector`, and `Hybrid` modes.
+5. Review the ranked chunk results and the live diagnostics shown in the UI.
 
 Use RedisInsight if you want to inspect the underlying Redis data, but the demo itself is meant to be driven from the app UI.
 
 ## First Run
 
-The first startup may take longer because the app indexes the packaged dataset into Redis and generates embeddings for vector search.
+When Redis is empty, startup takes longer because the app indexes the packaged dataset into Redis and generates embeddings for vector search.
 
 - The packaged dataset in `src/main/resources/datasets` is large, roughly `274 MB`.
 - The sample records dataset used by this demo is also published here: [sample-records.json.zip](https://storage.googleapis.com/redis-developer-public-datasets/redis-search-10k-dataset/sample-records.json.zip)
 - After downloading, extract it to `src/main/resources/datasets/sp500-fy2025-10k/sample-records.json`
-- First-run indexing time depends on how many companies you load and whether the local transformer embedder is configured and ready.
+- The app indexes the fixed workshop subset of 25 companies.
+- Indexing time depends on whether the local transformer embedder is configured and ready.
 - If vector or hybrid search fail, check your local embedding setup first.
 
 Example:
@@ -77,25 +77,25 @@ Example:
 unzip sample-records.json.zip -d src/main/resources/datasets/sp500-fy2025-10k
 ```
 
-If the dataset is not loaded yet, initialize it with:
-
-```bash
-curl -s -X POST http://localhost:8080/dataset/initialize \
-  -H 'Content-Type: application/json' \
-  -d '{"companyCount":100}'
-```
-
 You can check status with:
 
 ```bash
 curl -s http://localhost:8080/dataset/status
 ```
 
+If the app is already running and Redis is empty, restart the Spring app. You can also trigger the same load manually:
+
+```bash
+curl -s -X POST http://localhost:8080/dataset/initialize
+```
+
+The browser UI also has a `Load Data` button next to the dataset status. After data is indexed, the same button becomes `Reload Data`.
+
 ## Demo Flow
 
 The UI follows this flow:
 
-1. Initialize the dataset if needed.
+1. Start the app so it indexes the workshop dataset when Redis is empty.
 2. Use the filters to narrow company, ticker, sector, year, and filing date.
 3. Use autocomplete for company names, tickers, and section names.
 4. Switch between full-text, vector, and hybrid search.

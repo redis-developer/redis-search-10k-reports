@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css?v=20260407-first-run-indexing">
+    <link rel="stylesheet" href="/css/styles.css?v=20260407-limit-control">
 </head>
 <body>
     <header class="app-toolbar">
@@ -21,35 +21,6 @@
     </header>
 
     <main class="console-shell">
-        <section id="dataset-setup-modal" class="dataset-setup-modal hidden" aria-live="polite">
-            <div class="dataset-setup-card">
-                <span class="results-kicker">First Run</span>
-                <h2>Choose How Many Companies To Index</h2>
-                <p class="dataset-setup-copy">
-                    The packaged dataset already includes all companies in `sample-records.json`. Choose how many to load into Redis for this run.
-                </p>
-                <form id="dataset-setup-form" class="dataset-setup-form">
-                    <label for="company-count-range">Companies to index</label>
-                    <input
-                        id="company-count-range"
-                        name="companyCount"
-                        type="range"
-                        min="10"
-                        max="500"
-                        step="1"
-                        value="100"
-                    >
-                    <div class="dataset-setup-value-row">
-                        <strong id="company-count-value">100 companies</strong>
-                        <span id="dataset-setup-hint" class="dataset-setup-hint">First startup will embed and index the selected subset.</span>
-                    </div>
-                    <div class="dataset-setup-actions">
-                        <button type="submit" id="initialize-dataset-button" class="primary-button">Initialize Dataset</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
         <section class="control-dock">
             <div class="panel controls-panel">
                 <form id="search-form" class="search-form">
@@ -60,6 +31,7 @@
                                 id="query-input"
                                 name="query"
                                 rows="2"
+                                required
                                 placeholder="cloud demand, AI infrastructure, pricing pressure, supply chain exposure"
                             ></textarea>
                         </div>
@@ -127,6 +99,10 @@
                             <button type="button" class="mode-chip" data-mode="vector">Vector</button>
                             <button type="button" class="mode-chip active" data-mode="hybrid">Hybrid</button>
                         </div>
+                        <div class="field-group field-group-limit">
+                            <label for="limit-input">Limit</label>
+                            <input id="limit-input" name="limit" type="number" min="1" max="100" step="1" value="20">
+                        </div>
                         <div class="form-actions">
                             <button type="submit" class="primary-button">Run Retrieval</button>
                             <button type="button" id="reset-button" class="secondary-button">Reset</button>
@@ -137,7 +113,10 @@
         </section>
 
         <div class="search-feedback">
-            <div id="coverage-status" class="coverage-status">Loading corpus...</div>
+            <div class="dataset-feedback-row">
+                <div id="dataset-status" class="dataset-status">Dataset status unavailable</div>
+                <button type="button" id="initialize-dataset-button" class="secondary-button dataset-action-button">Load Data</button>
+            </div>
             <div id="search-status" class="search-status hidden" aria-live="polite"></div>
         </div>
 
@@ -158,6 +137,6 @@
         </section>
     </main>
 
-    <script src="/js/script.js?v=20260407-initialization-timing"></script>
+    <script src="/js/script.js?v=20260407-required-query"></script>
 </body>
 </html>

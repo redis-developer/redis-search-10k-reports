@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.redis.redissearchdemo.domain.FilingChunk;
+import com.redis.redissearchdemo.dto.DatasetInitializationResult;
 import com.redis.redissearchdemo.repository.FilingChunkRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.DefaultResourceLoader;
@@ -66,7 +67,7 @@ class FilingChunkServiceTest {
 
     @Test
     void initializeDefaultDatasetLoadsOnlyRequestedCompanySubset() throws Exception {
-        FilingChunkService.DatasetInitializationResult result = service.initializeDefaultDataset(10);
+        DatasetInitializationResult result = service.initializeDefaultDataset();
 
         @SuppressWarnings("unchecked")
         var captor = org.mockito.ArgumentCaptor.forClass(Iterable.class);
@@ -80,7 +81,8 @@ class FilingChunkServiceTest {
         List<String> tickerOrder = new ArrayList<>(savedChunks.stream()
                 .map(FilingChunk::getTicker)
                 .collect(java.util.stream.Collectors.toCollection(LinkedHashSet::new)));
-        assertThat(tickerOrder).containsExactly(
+        assertThat(tickerOrder).hasSize(25);
+        assertThat(tickerOrder).startsWith(
                 "NVDA",
                 "AAPL",
                 "GOOGL",
@@ -92,7 +94,7 @@ class FilingChunkServiceTest {
                 "BRK.B",
                 "WMT"
         );
-        assertThat(result.companyCount()).isEqualTo(10);
+        assertThat(result.companyCount()).isEqualTo(25);
         assertThat(result.chunkCount()).isEqualTo(savedChunks.size());
         assertThat(result.elapsedMillis()).isGreaterThanOrEqualTo(0L);
     }

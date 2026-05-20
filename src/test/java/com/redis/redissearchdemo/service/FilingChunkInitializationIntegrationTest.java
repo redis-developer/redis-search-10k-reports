@@ -1,6 +1,7 @@
 package com.redis.redissearchdemo.service;
 
 import com.redis.redissearchdemo.domain.FilingChunk;
+import com.redis.redissearchdemo.dto.DatasetInitializationResult;
 import com.redis.redissearchdemo.repository.FilingChunkRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -12,7 +13,7 @@ import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest
+@SpringBootTest(properties = "demo.dataset.initialize-on-startup=false")
 class FilingChunkInitializationIntegrationTest {
 
     @Autowired
@@ -30,9 +31,9 @@ class FilingChunkInitializationIntegrationTest {
     void initializeDefaultDatasetLoadsRequestedCompaniesIntoRedis() throws Exception {
         filingChunkRepository.deleteAll();
 
-        FilingChunkService.DatasetInitializationResult result = filingChunkService.initializeDefaultDataset(10);
+        DatasetInitializationResult result = filingChunkService.initializeDefaultDataset();
 
-        assertThat(result.companyCount()).isEqualTo(10);
+        assertThat(result.companyCount()).isEqualTo(25);
         assertThat(result.chunkCount()).isPositive();
         assertThat(result.elapsedMillis()).isGreaterThanOrEqualTo(0L);
         assertThat(filingChunkRepository.count()).isPositive();
@@ -42,6 +43,6 @@ class FilingChunkInitializationIntegrationTest {
             tickers.add(chunk.getTicker());
         }
 
-        assertThat(tickers).hasSize(10);
+        assertThat(tickers).hasSize(25);
     }
 }

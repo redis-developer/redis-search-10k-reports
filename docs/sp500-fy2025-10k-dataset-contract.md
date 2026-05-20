@@ -63,22 +63,15 @@ Recommended fields for retrieval, diagnostics, and UX:
 - Keep chunk size consistent enough to make retrieval behavior easy to explain in the demo.
 - Avoid storing raw filing bodies in the repository if the chunked text is already preserved.
 
-## Coverage Reporting
+## Dataset Status
 
-The dataset should ship with a compact coverage summary so the UI can show how complete the corpus is.
+The app initializes the fixed workshop corpus during startup when Redis is empty. It reports a compact dataset status so the UI can show whether the workshop corpus is ready.
 
-Suggested coverage fields:
+Status fields:
 
-- `targetUniverse`
-- `targetCompanies`
-- `indexedCompanies`
-- `skippedCompanies`
-- `indexedSections`
-- `indexedChunks`
-- `estimatedCompressedBytes`
-- `estimatedUncompressedBytes`
-- `generatedAt`
-- `notes`
+- `initialized`
+- `companyCount`
+- `chunkCount`
 
 ## File Layout
 
@@ -90,7 +83,6 @@ Suggested files:
 
 - `manifest.json`
 - `schema.json`
-- `coverage-template.json`
 - `sample-records.json`
 
 ## Notes

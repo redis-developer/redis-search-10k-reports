@@ -13,7 +13,7 @@ This document is the product-level brief for the demo. The canonical dataset fie
 
 - Universe: fixed FY2025-era S&P 500 constituent list.
 - Filing type: 10-K only.
-- Coverage goal: all 500 if possible, otherwise the largest clean subset with transparent coverage reporting.
+- Workshop corpus: fixed 25 company subset loaded into Redis on startup when Redis is empty.
 - Preferred sections: `Business`, `Risk Factors`, and `Management's Discussion and Analysis`.
 - Record unit: section-aligned chunk with small overlap.
 - Primary result unit: individual matched chunk.
@@ -24,7 +24,6 @@ This document is the product-level brief for the demo. The canonical dataset fie
   - `full-text`
   - `vector`
   - `hybrid`
-  - `compare`
 - Default mode: `hybrid`
 - Filters:
   - company name
@@ -33,10 +32,9 @@ This document is the product-level brief for the demo. The canonical dataset fie
   - section
   - filing year
   - filing date
-- Free-text query is optional.
-- Filters-only searches are allowed.
+- Free-text query is required in the UI.
 - Autocomplete should support company names, tickers, and section names.
-- Expose latency, result counts, mode details, and coverage summary in the UI.
+- Expose latency, result counts, mode details, and dataset status in the UI.
 
 ## UI Brief
 
@@ -48,7 +46,6 @@ This document is the product-level brief for the demo. The canonical dataset fie
 - Top controls, results below
 - Inline diagnostics near the controls
 - Compact stacked result cards
-- Three equal-width compare columns
 - Subtle Redis branding
 - Dense, technical overall feel
 - Filters always visible
@@ -64,4 +61,4 @@ This document is the product-level brief for the demo. The canonical dataset fie
 
 - Replace the synthetic sample corpus with the real FY2025 10-K chunk dataset.
 - Tighten the hybrid implementation if Redis-native hybrid support becomes reliable in this environment.
-- Keep the dataset contract and generated coverage metadata in sync with the real corpus builder.
+- Keep the dataset contract in sync with the packaged workshop corpus.
